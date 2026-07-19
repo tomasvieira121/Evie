@@ -1,0 +1,11 @@
+.class public abstract Lcom/voxel/simplesearchlauncher/dagger/module/FlavorAndroidInjectionModule_ResetLauncherFailureFragment;
+.super Ljava/lang/Object;
+.source "FlavorAndroidInjectionModule_ResetLauncherFailureFragment.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/voxel/simplesearchlauncher/dagger/module/FlavorAndroidInjectionModule_ResetLauncherFailureFragment$ResetLauncherFailureFragmentSubcomponent;
+    }
+.end annotation

@@ -1,0 +1,27 @@
+package com.google.android.gms.internal.measurement;
+
+/* JADX INFO: loaded from: classes.dex */
+final class zzvc {
+    private static final zzva<?> zzbvo = new zzvb();
+    private static final zzva<?> zzbvp = zzvq();
+
+    private static zzva<?> zzvq() {
+        try {
+            return (zzva) Class.forName("com.google.protobuf.ExtensionSchemaFull").getDeclaredConstructor(new Class[0]).newInstance(new Object[0]);
+        } catch (Exception unused) {
+            return null;
+        }
+    }
+
+    static zzva<?> zzvr() {
+        return zzbvo;
+    }
+
+    static zzva<?> zzvs() {
+        zzva<?> zzvaVar = zzbvp;
+        if (zzvaVar != null) {
+            return zzvaVar;
+        }
+        throw new IllegalStateException("Protobuf runtime is not correctly loaded.");
+    }
+}

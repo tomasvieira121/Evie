@@ -1,0 +1,13 @@
+package com.google.android.gms.internal.drive;
+
+import com.google.android.gms.drive.metadata.SearchableOrderedMetadataField;
+import com.google.android.gms.drive.metadata.SortableMetadataField;
+import com.google.android.gms.drive.metadata.internal.zze;
+import java.util.Date;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class zzig extends zze implements SearchableOrderedMetadataField<Date>, SortableMetadataField<Date> {
+    public zzig(String str, int i) {
+        super(str, 4100000);
+    }
+}

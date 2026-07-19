@@ -1,0 +1,18 @@
+version: 3.0.2
+apkFileName: Evie.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 23
+  targetSdkVersion: 36
+versionInfo:
+  versionCode: 21408010
+  versionName: 2.14.8-10-modern
+resourcesInfo:
+  packageId: 127
+doNotCompress:
+- arsc
+- jpg
+- mp4
+- png

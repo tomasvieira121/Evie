@@ -1,0 +1,14 @@
+package com.google.android.gms.ads.mediation.customevent;
+
+import com.google.ads.mediation.NetworkExtras;
+import java.util.HashMap;
+
+/* JADX INFO: loaded from: classes.dex */
+@Deprecated
+public final class CustomEventExtras implements NetworkExtras {
+    private final HashMap<String, Object> zzdgj = new HashMap<>();
+
+    public final Object getExtra(String str) {
+        return this.zzdgj.get(str);
+    }
+}

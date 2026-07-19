@@ -1,0 +1,28 @@
+# APK/build outputs
+*.apk
+*.apks
+*.aab
+*.idsig
+out/
+Evie-src/build/
+Evie-src/dist/
+
+# Signing material must never enter Git history
+*.keystore
+*.jks
+*.p12
+*.pem
+*.key
+
+# Apktool's untouched input manifest and obsolete APK signatures
+Evie-src/original/
+
+# JADX resource dump duplicates the authoritative Apktool resources
+Evie-jadx/resources/
+
+# Local tooling and editor state
+.tools/
+.idea/
+.vscode/
+*.swp
+*~

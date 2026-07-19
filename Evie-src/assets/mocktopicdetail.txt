@@ -1,0 +1,2421 @@
+{
+    "objects": [
+        {
+            "@id": "d275ae66-81ab-32d7-8ffe-8772b825079e",
+            "@type": "NewsArticle",
+            "analytics": {
+                "global_rank": 447,
+                "global_score": 0.54563755,
+                "layout_time": 1509054419542,
+                "salience": 0.026774433
+            },
+            "author": {
+                "@context": "http://schema.org",
+                "@type": "Person",
+                "affiliation": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "height": 60,
+                        "url": "https://s.m.huffpost.com/assets/hp-amp-101ecf8047b044dce5f3122c63056162580f1c26994c73ae90dbd1c5d1545a71.gif",
+                        "width": 600
+                    },
+                    "name": "HuffPost",
+                    "url": "https://www.huffingtonpost.com"
+                },
+                "description": "Send Hilary tips and/or cute cat photos at Hilary.Hanson@huffpost.com.",
+                "jobTitle": "Senior trends editor, HuffPost",
+                "name": "Hilary Hanson",
+                "url": "http://www.huffingtonpost.com/author/hilary-hanson"
+            },
+            "dateCreated": "2017-10-26T16:22:06Z",
+            "datePublished": "2017-10-26T16:22:06+00:00",
+            "description": "The company says it's launching an investigation after a disturbing documentary about its practices.",
+            "ev:category": [
+                {
+                    "confidence": 0.8,
+                    "name": "/Food & Drink/Food/Candy & Sweets"
+                },
+                {
+                    "confidence": 0.8,
+                    "name": "/Food & Drink/Food"
+                },
+                {
+                    "confidence": 0.8,
+                    "name": "/Food & Drink"
+                }
+            ],
+            "ev:headlineNormcase": "There's a dark side to your beloved Haribo gummies, says horrific new report",
+            "ev:topic": [
+                {
+                    "@id": "8b098a6b-4764-3d83-ba9c-44fa39c47b00",
+                    "@type": "ev:topicPublisher",
+                    "name": "HuffPost"
+                },
+                {
+                    "@id": "3b3a71ac-2d20-46e9-b369-26d94a28c664",
+                    "@type": "ev:topicEntity",
+                    "name": "Haribo",
+                    "salience": 0.2835563
+                },
+                {
+                    "@id": "c13311a8-b517-4930-84b2-5b2d17f9062f",
+                    "@type": "ev:topicEntity",
+                    "name": "Germany",
+                    "salience": 0.018375147
+                },
+                {
+                    "@id": "3e69a491-c2c5-441d-a4fd-6a88be1c7eac",
+                    "@type": "ev:topicEntity",
+                    "name": "HuffPost",
+                    "salience": 0.017406084
+                },
+                {
+                    "@id": "20a7914f-c426-3d04-b905-e51588416014",
+                    "@type": "ev:topicCategory",
+                    "confidence": 0.93,
+                    "name": "Candy & Sweets"
+                },
+                {
+                    "@id": "27f870e6-fffd-399b-9b97-7af4023ae34f",
+                    "@type": "ev:topicCategory",
+                    "confidence": 0.91,
+                    "name": "Food"
+                },
+                {
+                    "@id": "fd79ff01-7774-33d2-bd7b-2c6686ae7e6c",
+                    "@type": "ev:topicCategory",
+                    "confidence": 0.63,
+                    "name": "Food & Drink"
+                },
+                {
+                    "@id": "1f60bf6e-894c-3453-8ba3-7d4a896f70ca",
+                    "@type": "ev:topicMappedCategory",
+                    "name": null
+                }
+            ],
+            "headline": "There's a dark side to your beloved Haribo gummies, says horrific new report",
+            "id": "https://www.huffingtonpost.com/entry/haribo-slave-conditions-labor-animal-cruelty_us_59f20663e4b077d8dfc80bc2?ncid=inblnkushpmg00000009",
+            "image": [
+                {
+                    "height": 338,
+                    "url": "http://assets.evie.com/asset/0f1772169b604a08af2ccc2db1c2186f47a6919c/backdrop_hdpi",
+                    "width": 600
+                },
+                {
+                    "height": 450,
+                    "url": "http://assets.evie.com/asset/0f1772169b604a08af2ccc2db1c2186f47a6919c/backdrop_xhdpi",
+                    "width": 800
+                },
+                {
+                    "height": 94,
+                    "url": "http://assets.evie.com/asset/0f1772169b604a08af2ccc2db1c2186f47a6919c/icon_w94",
+                    "width": 94
+                },
+                {
+                    "height": 141,
+                    "url": "http://assets.evie.com/asset/0f1772169b604a08af2ccc2db1c2186f47a6919c/icon_w141",
+                    "width": 141
+                },
+                {
+                    "height": 188,
+                    "url": "http://assets.evie.com/asset/0f1772169b604a08af2ccc2db1c2186f47a6919c/icon_w188",
+                    "width": 188
+                },
+                {
+                    "height": 282,
+                    "url": "http://assets.evie.com/asset/0f1772169b604a08af2ccc2db1c2186f47a6919c/icon_w282",
+                    "width": 282
+                },
+                {
+                    "height": 376,
+                    "url": "http://assets.evie.com/asset/0f1772169b604a08af2ccc2db1c2186f47a6919c/icon_w376",
+                    "width": 376
+                },
+                {
+                    "height": 240,
+                    "url": "http://assets.evie.com/asset/0f1772169b604a08af2ccc2db1c2186f47a6919c/tile43_w360",
+                    "width": 360
+                },
+                {
+                    "height": 480,
+                    "url": "http://assets.evie.com/asset/0f1772169b604a08af2ccc2db1c2186f47a6919c/tile43_w720",
+                    "width": 720
+                }
+            ],
+            "inLanguage": "en_US",
+            "keywords": [
+                "huffington-post",
+                "candy",
+                "slave-labor",
+                "deutsche-welle",
+                "@health_depression",
+                "@health_ibs",
+                "@health_models",
+                "@team_us_news_trends",
+                "type: news"
+            ],
+            "mainEntity": [
+                {
+                    "@id": "3b3a71ac-2d20-46e9-b369-26d94a28c664",
+                    "@type": "ORGANIZATION",
+                    "name": "Haribo",
+                    "salience": 0.06260863,
+                    "wikipedia_id": "Haribo"
+                },
+                {
+                    "@id": "c13311a8-b517-4930-84b2-5b2d17f9062f",
+                    "@type": "LOCATION",
+                    "name": "German",
+                    "salience": 0.057896517,
+                    "wikipedia_id": "Germany"
+                },
+                {
+                    "@id": "3e69a491-c2c5-441d-a4fd-6a88be1c7eac",
+                    "@type": "ORGANIZATION",
+                    "name": "HuffPost",
+                    "salience": 0.026774433,
+                    "wikipedia_id": "HuffPost"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "ev:topicId": "huffingtonpost.com",
+                "favicon": "http://assets.evie.com/asset/5ce26c3ee02eb8ebb3068a6a0ff08bc9ab6bad3c/favicon_orig",
+                "name": "HuffPost",
+                "url": "https://www.huffingtonpost.com"
+            },
+            "speakable": {
+                "@type": "SpeakableSpecification",
+                "cssSelector": [
+                    ".headline__title",
+                    ".headline__subtitle",
+                    ".js-entry-text"
+                ]
+            },
+            "url": "https://www.huffingtonpost.com/entry/haribo-slave-conditions-labor-animal-cruelty_us_59f20663e4b077d8dfc80bc2"
+        },
+        {
+            "@id": "228a034d-01e6-32c1-a84a-e08a24408a68",
+            "@type": "NewsArticle",
+            "analytics": {
+                "global_rank": 17717,
+                "global_score": 0.0010397354,
+                "layout_time": 1509054419542,
+                "salience": 0.26777223
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Brian Flood"
+            },
+            "datePublished": "2017-10-21T22:00:00+00:00",
+            "description": "MSNBC star Rachel Maddow’s latest anti-Trump conspiracy theory was so outlandish that even the dependently liberal HuffPost criticized it as so flimsy that it could be debunked by a quick glance at a map.",
+            "ev:category": [
+                {
+                    "confidence": 0.96,
+                    "name": "/News/Politics"
+                }
+            ],
+            "ev:headlineNormcase": "Rachel Maddow called out by fellow liberals for pushing anti-Trump conspiracy",
+            "headline": "Rachel Maddow called out by fellow liberals for pushing anti-Trump conspiracy",
+            "id": "http://www.foxnews.com/entertainment/2017/10/21/rachel-maddow-called-out-by-fellow-liberals-for-pushing-anti-trump-conspiracy.html",
+            "image": [
+                {
+                    "height": 338,
+                    "url": "http://assets.evie.com/asset/6fd5de4544ed8f15c46ccf1a57da92ba3d2deb3d/backdrop_hdpi",
+                    "width": 600
+                },
+                {
+                    "height": 94,
+                    "url": "http://assets.evie.com/asset/6fd5de4544ed8f15c46ccf1a57da92ba3d2deb3d/icon_w94",
+                    "width": 94
+                },
+                {
+                    "height": 141,
+                    "url": "http://assets.evie.com/asset/6fd5de4544ed8f15c46ccf1a57da92ba3d2deb3d/icon_w141",
+                    "width": 141
+                },
+                {
+                    "height": 188,
+                    "url": "http://assets.evie.com/asset/6fd5de4544ed8f15c46ccf1a57da92ba3d2deb3d/icon_w188",
+                    "width": 188
+                },
+                {
+                    "height": 282,
+                    "url": "http://assets.evie.com/asset/6fd5de4544ed8f15c46ccf1a57da92ba3d2deb3d/icon_w282",
+                    "width": 282
+                },
+                {
+                    "height": 376,
+                    "url": "http://assets.evie.com/asset/6fd5de4544ed8f15c46ccf1a57da92ba3d2deb3d/icon_w376",
+                    "width": 376
+                },
+                {
+                    "height": 240,
+                    "url": "http://assets.evie.com/asset/6fd5de4544ed8f15c46ccf1a57da92ba3d2deb3d/tile43_w360",
+                    "width": 360
+                }
+            ],
+            "keywords": [
+                "article",
+                "FoxNews.com",
+                "Brian Flood",
+                "fnc",
+                "fnc/entertainment/tv",
+                "fox-news/entertainment/tv",
+                "fox-news/entertainment/media"
+            ],
+            "mainEntity": [
+                {
+                    "@id": "3e69a491-c2c5-441d-a4fd-6a88be1c7eac",
+                    "@type": "ORGANIZATION",
+                    "name": "HuffPost",
+                    "salience": 0.26777223,
+                    "wikipedia_id": "HuffPost"
+                },
+                {
+                    "@id": "a7495303-3ca4-405e-aade-77a55a1f5144",
+                    "@type": "PERSON",
+                    "name": "Rachel Maddow",
+                    "salience": 0.12696414,
+                    "wikipedia_id": "Rachel_Maddow"
+                },
+                {
+                    "@id": "b653f95a-3afa-4649-952c-58c01ba54b9b",
+                    "@type": "ORGANIZATION",
+                    "name": "MSNBC",
+                    "salience": 0.053494833,
+                    "wikipedia_id": "MSNBC"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "favicon": "http://assets.evie.com/asset/fe86d4760b9c09ab0d3b720b734073411140cba9/favicon_orig",
+                "name": "Fox News"
+            },
+            "url": "http://www.foxnews.com/entertainment/2017/10/21/rachel-maddow-called-out-by-fellow-liberals-for-pushing-anti-trump-conspiracy.html"
+        },
+        {
+            "@id": "618e2dae-a4cb-3c04-ad2d-f989886866e2",
+            "@type": "NewsArticle",
+            "analytics": {
+                "global_rank": 3994,
+                "global_score": 0.24577828,
+                "layout_time": 1509054419542,
+                "salience": 0.09305579
+            },
+            "author": [
+                {
+                    "@context": "http://schema.org",
+                    "@type": "Person",
+                    "affiliation": {
+                        "@type": "Organization",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "height": 60,
+                            "url": "https://s.m.huffpost.com/assets/hp-amp-101ecf8047b044dce5f3122c63056162580f1c26994c73ae90dbd1c5d1545a71.gif",
+                            "width": 600
+                        },
+                        "name": "HuffPost",
+                        "url": "https://www.huffingtonpost.com"
+                    },
+                    "description": "Jenna Amatulli is a trends reporter for HuffPost. She's worked and interned at Vanity Fair, Apple, BULLETT, and Conde Nast Traveler. In addition to her severe oyster addiction, she's a Netflix enthusiast, a red wine drinker, and a voracious reader. Follow her on Twitter/Instagram: @ohheyjenna.",
+                    "jobTitle": "Trends Reporter, HuffPost",
+                    "name": "Jenna Amatulli",
+                    "url": "http://www.huffingtonpost.com/author/jenna-amatulli"
+                },
+                {
+                    "@context": "http://schema.org",
+                    "@type": "Person",
+                    "affiliation": {
+                        "@type": "Organization",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "height": 60,
+                            "url": "https://s.m.huffpost.com/assets/hp-amp-101ecf8047b044dce5f3122c63056162580f1c26994c73ae90dbd1c5d1545a71.gif",
+                            "width": 600
+                        },
+                        "name": "HuffPost",
+                        "url": "https://www.huffingtonpost.com"
+                    },
+                    "description": "Photo Editor at HuffPost",
+                    "jobTitle": "Photo Editor, HuffPost",
+                    "name": "Damon Dahlen",
+                    "url": "http://www.huffingtonpost.com/author/damon-dahlen"
+                }
+            ],
+            "dateCreated": "2017-10-26T19:37:02Z",
+            "datePublished": "2017-10-26T19:37:02+00:00",
+            "description": "We're craving craft brews and barbecue!",
+            "ev:category": [
+                {
+                    "confidence": 0.61,
+                    "name": "/Arts & Entertainment"
+                },
+                {
+                    "confidence": 0.61,
+                    "name": "/Arts & Entertainment/Music & Audio"
+                }
+            ],
+            "ev:headlineNormcase": "Back to missouri! HuffPost's Listen to America tour stops in Kansas City",
+            "ev:topic": [
+                {
+                    "@id": "8b098a6b-4764-3d83-ba9c-44fa39c47b00",
+                    "@type": "ev:topicPublisher",
+                    "name": "HuffPost"
+                },
+                {
+                    "@id": "0cc2d02a-4099-4cbc-999e-32e363bd3f66",
+                    "@type": "ev:topicEntity",
+                    "name": "Kansas City",
+                    "salience": 0.009557901
+                },
+                {
+                    "@id": "3e69a491-c2c5-441d-a4fd-6a88be1c7eac",
+                    "@type": "ev:topicEntity",
+                    "name": "HuffPost",
+                    "salience": 0.017406084
+                },
+                {
+                    "@id": "c1f18059-e597-4682-9fbc-fb52dac2cbf6",
+                    "@type": "ev:topicEntity",
+                    "name": "Missouri",
+                    "salience": 0.014395509
+                },
+                {
+                    "@id": "7540d3c7-f2ce-3167-95ba-c5c370786b9a",
+                    "@type": "ev:topicCategory",
+                    "confidence": 0.77,
+                    "name": "Arts & Entertainment"
+                },
+                {
+                    "@id": "38f49147-c7cc-3073-bc7a-3329c282d4dc",
+                    "@type": "ev:topicMappedCategory",
+                    "name": "Entertainment"
+                },
+                {
+                    "@id": "50892cf3-fcfa-3229-8802-4d6b7025fe4f",
+                    "@type": "ev:topicCategory",
+                    "confidence": 0.65,
+                    "name": "Music & Audio"
+                }
+            ],
+            "headline": "Back to missouri! HuffPost's Listen to America tour stops in Kansas City",
+            "id": "https://www.huffingtonpost.com/entry/back-to-missouri-huffposts-listen-to-america-tour-stops-in-kansas-city_us_59f221c4e4b03cd20b80424d?ncid=inblnkushpmg00000009",
+            "image": [
+                {
+                    "height": 338,
+                    "url": "http://assets.evie.com/asset/6ca4458f7429e14a1aa0aa382bab50dba63c90b2/backdrop_hdpi",
+                    "width": 600
+                },
+                {
+                    "height": 450,
+                    "url": "http://assets.evie.com/asset/6ca4458f7429e14a1aa0aa382bab50dba63c90b2/backdrop_xhdpi",
+                    "width": 800
+                },
+                {
+                    "height": 94,
+                    "url": "http://assets.evie.com/asset/6ca4458f7429e14a1aa0aa382bab50dba63c90b2/icon_w94",
+                    "width": 94
+                },
+                {
+                    "height": 141,
+                    "url": "http://assets.evie.com/asset/6ca4458f7429e14a1aa0aa382bab50dba63c90b2/icon_w141",
+                    "width": 141
+                },
+                {
+                    "height": 188,
+                    "url": "http://assets.evie.com/asset/6ca4458f7429e14a1aa0aa382bab50dba63c90b2/icon_w188",
+                    "width": 188
+                },
+                {
+                    "height": 282,
+                    "url": "http://assets.evie.com/asset/6ca4458f7429e14a1aa0aa382bab50dba63c90b2/icon_w282",
+                    "width": 282
+                },
+                {
+                    "height": 376,
+                    "url": "http://assets.evie.com/asset/6ca4458f7429e14a1aa0aa382bab50dba63c90b2/icon_w376",
+                    "width": 376
+                },
+                {
+                    "height": 240,
+                    "url": "http://assets.evie.com/asset/6ca4458f7429e14a1aa0aa382bab50dba63c90b2/tile43_w360",
+                    "width": 360
+                },
+                {
+                    "height": 480,
+                    "url": "http://assets.evie.com/asset/6ca4458f7429e14a1aa0aa382bab50dba63c90b2/tile43_w720",
+                    "width": 720
+                }
+            ],
+            "inLanguage": "en_US",
+            "keywords": [
+                "arts-and-entertainment",
+                "kansas",
+                "kansas-city",
+                "kansas-city-missouri",
+                "@bustour",
+                "@health_erectile",
+                "@health_depression",
+                "@health_ibs",
+                "@health_models",
+                "@team_us_news_trends",
+                "type: news"
+            ],
+            "mainEntity": [
+                {
+                    "@id": "0cc2d02a-4099-4cbc-999e-32e363bd3f66",
+                    "@type": "LOCATION",
+                    "name": "Kansas City",
+                    "salience": 0.5424115,
+                    "wikipedia_id": "Kansas_City,_Missouri"
+                },
+                {
+                    "@id": "3e69a491-c2c5-441d-a4fd-6a88be1c7eac",
+                    "@type": "ORGANIZATION",
+                    "name": "HuffPost",
+                    "salience": 0.09305579,
+                    "wikipedia_id": "HuffPost"
+                },
+                {
+                    "@id": "c1f18059-e597-4682-9fbc-fb52dac2cbf6",
+                    "@type": "LOCATION",
+                    "name": "Missouri",
+                    "salience": 0.05623424,
+                    "wikipedia_id": "Missouri"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "ev:topicId": "huffingtonpost.com",
+                "favicon": "http://assets.evie.com/asset/5ce26c3ee02eb8ebb3068a6a0ff08bc9ab6bad3c/favicon_orig",
+                "name": "HuffPost",
+                "url": "https://www.huffingtonpost.com"
+            },
+            "speakable": {
+                "@type": "SpeakableSpecification",
+                "cssSelector": [
+                    ".headline__title",
+                    ".headline__subtitle",
+                    ".js-entry-text"
+                ]
+            },
+            "url": "https://www.huffingtonpost.com/entry/back-to-missouri-huffposts-listen-to-america-tour-stops-in-kansas-city_us_59f221c4e4b03cd20b80424d"
+        },
+        {
+            "@id": "2f772f7b-006b-32b6-9993-4ddf1c406c21",
+            "@type": "NewsArticle",
+            "analytics": {
+                "global_rank": 2717,
+                "global_score": 0.3127413,
+                "layout_time": 1509054419542,
+                "salience": 0.046275415
+            },
+            "author": {
+                "@context": "http://schema.org",
+                "@type": "Person",
+                "affiliation": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "height": 60,
+                        "url": "https://s.m.huffpost.com/assets/hp-amp-101ecf8047b044dce5f3122c63056162580f1c26994c73ae90dbd1c5d1545a71.gif",
+                        "width": 600
+                    },
+                    "name": "HuffPost",
+                    "url": "https://www.huffingtonpost.com"
+                },
+                "description": "Alexander Kaufman is a climate, environment and business reporter at HuffPost, based in New York. Email him at alexander.kaufman@huffingtonpost.com. You can reach him by encrypted email at alexanderckaufman@protonmail.com or direct message him on Twitter @AlexCKaufman for his phone number on Signal.",
+                "jobTitle": "Business & Environment Reporter, HuffPost",
+                "name": "Alexander C. Kaufman",
+                "url": "http://www.huffingtonpost.com/author/alexander-c-kaufman"
+            },
+            "dateCreated": "2017-10-25T17:00:20Z",
+            "datePublished": "2017-10-25T17:00:20+00:00",
+            "description": "The hard-line climate change deniers at the right-wing Heartland Institute sent the agency a list 205 names to consider.",
+            "ev:category": [
+                {
+                    "confidence": 0.99,
+                    "name": "/People & Society/Social Issues & Advocacy/Green Living & Environmental Issues"
+                },
+                {
+                    "confidence": 0.99,
+                    "name": "/Science"
+                },
+                {
+                    "confidence": 0.99,
+                    "name": "/Science/Earth Sciences"
+                },
+                {
+                    "confidence": 0.99,
+                    "name": "/Science/Ecology & Environment/Climate Change & Global Warming"
+                },
+                {
+                    "confidence": 0.99,
+                    "name": "/People & Society"
+                },
+                {
+                    "confidence": 0.99,
+                    "name": "/Science/Earth Sciences/Atmospheric Science"
+                },
+                {
+                    "confidence": 0.99,
+                    "name": "/People & Society/Social Issues & Advocacy"
+                },
+                {
+                    "confidence": 0.99,
+                    "name": "/Science/Ecology & Environment"
+                }
+            ],
+            "ev:headlineNormcase": "Here's the list of climate change deniers considered for the EPA's 'Red Team' debate",
+            "headline": "Here's the list of climate change deniers considered for the EPA's 'Red Team' debate",
+            "id": "https://www.huffingtonpost.com/entry/epa-red-team_us_59efa14ce4b0bf1f8836893e?ncid=inblnkushpmg00000009",
+            "image": [
+                {
+                    "height": 338,
+                    "url": "http://assets.evie.com/asset/172dd17efa78d98eef8a0972d612f112213b2a4e/backdrop_hdpi",
+                    "width": 600
+                },
+                {
+                    "height": 450,
+                    "url": "http://assets.evie.com/asset/172dd17efa78d98eef8a0972d612f112213b2a4e/backdrop_xhdpi",
+                    "width": 800
+                },
+                {
+                    "height": 94,
+                    "url": "http://assets.evie.com/asset/172dd17efa78d98eef8a0972d612f112213b2a4e/icon_w94",
+                    "width": 94
+                },
+                {
+                    "height": 141,
+                    "url": "http://assets.evie.com/asset/172dd17efa78d98eef8a0972d612f112213b2a4e/icon_w141",
+                    "width": 141
+                },
+                {
+                    "height": 188,
+                    "url": "http://assets.evie.com/asset/172dd17efa78d98eef8a0972d612f112213b2a4e/icon_w188",
+                    "width": 188
+                },
+                {
+                    "height": 282,
+                    "url": "http://assets.evie.com/asset/172dd17efa78d98eef8a0972d612f112213b2a4e/icon_w282",
+                    "width": 282
+                },
+                {
+                    "height": 376,
+                    "url": "http://assets.evie.com/asset/172dd17efa78d98eef8a0972d612f112213b2a4e/icon_w376",
+                    "width": 376
+                },
+                {
+                    "height": 240,
+                    "url": "http://assets.evie.com/asset/172dd17efa78d98eef8a0972d612f112213b2a4e/tile43_w360",
+                    "width": 360
+                },
+                {
+                    "height": 480,
+                    "url": "http://assets.evie.com/asset/172dd17efa78d98eef8a0972d612f112213b2a4e/tile43_w720",
+                    "width": 720
+                }
+            ],
+            "inLanguage": "en_US",
+            "keywords": [
+                "climate-change",
+                "environmental-protection-agency",
+                "global-warming",
+                "meteorology",
+                "scott-pruitt",
+                "administrator-of-the-environmental-protection-agency",
+                "climate-change-denial",
+                "carbon-dioxide-in-earths-atmosphere",
+                "@health_erectile",
+                "@health_depression",
+                "@health_ibs",
+                "@health_models",
+                "@team_us_news_national_beats",
+                "type: news"
+            ],
+            "mainEntity": [
+                {
+                    "@id": "b46033a8-ad00-4a51-ac2c-27acfe3f79c0",
+                    "@type": "ORGANIZATION",
+                    "name": "EPA",
+                    "salience": 0.100984044,
+                    "wikipedia_id": "United_States_Environmental_Protection_Agency"
+                },
+                {
+                    "@id": "44aa9d70-82fb-483b-abd4-f47d9908b47d",
+                    "@type": "ORGANIZATION",
+                    "name": "Heartland Institute",
+                    "salience": 0.10013184,
+                    "wikipedia_id": "The_Heartland_Institute"
+                },
+                {
+                    "@id": "3e69a491-c2c5-441d-a4fd-6a88be1c7eac",
+                    "@type": "OTHER",
+                    "name": "HuffPost",
+                    "salience": 0.046275415,
+                    "wikipedia_id": "HuffPost"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "ev:topicId": "huffingtonpost.com",
+                "favicon": "http://assets.evie.com/asset/5ce26c3ee02eb8ebb3068a6a0ff08bc9ab6bad3c/favicon_orig",
+                "name": "HuffPost",
+                "url": "https://www.huffingtonpost.com"
+            },
+            "speakable": {
+                "@type": "SpeakableSpecification",
+                "cssSelector": [
+                    ".headline__title",
+                    ".headline__subtitle",
+                    ".js-entry-text"
+                ]
+            },
+            "url": "https://www.huffingtonpost.com/entry/epa-red-team_us_59efa14ce4b0bf1f8836893e"
+        },
+        {
+            "@id": "c2e6a801-13e5-36ec-a0c1-569d376a21ab",
+            "@type": "NewsArticle",
+            "analytics": {
+                "global_rank": 2977,
+                "global_score": 0.2983185,
+                "layout_time": 1509054419542,
+                "salience": 0.029101565
+            },
+            "author": [
+                {
+                    "@context": "http://schema.org",
+                    "@type": "Person",
+                    "affiliation": {
+                        "@type": "Organization",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "height": 60,
+                            "url": "https://s.m.huffpost.com/assets/hp-amp-101ecf8047b044dce5f3122c63056162580f1c26994c73ae90dbd1c5d1545a71.gif",
+                            "width": 600
+                        },
+                        "name": "HuffPost",
+                        "url": "https://www.huffingtonpost.com"
+                    },
+                    "description": "Igor Bobic is a reporter helps oversee The Huffington Post's coverage of politics and policy in Washington, D.C. He can be reached at igor.bobic@huffpost.com and is on Twitter @igorbobic.",
+                    "jobTitle": "Politics Reporter, HuffPost",
+                    "name": "Igor Bobic",
+                    "url": "http://www.huffingtonpost.com/author/igor-bobic"
+                },
+                {
+                    "@context": "http://schema.org",
+                    "@type": "Person",
+                    "affiliation": {
+                        "@type": "Organization",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "height": 60,
+                            "url": "https://s.m.huffpost.com/assets/hp-amp-101ecf8047b044dce5f3122c63056162580f1c26994c73ae90dbd1c5d1545a71.gif",
+                            "width": 600
+                        },
+                        "name": "HuffPost",
+                        "url": "https://www.huffingtonpost.com"
+                    },
+                    "description": "Willa Frej is a HuffPost reporter based in London. Fluent in French and proficient in Spanish and Arabic, she focuses on international news and refugee-related issues. Willa is a graduate of Yale University. She can be reached at willa.frej@huffpost.com and on Twitter @willafrej.",
+                    "jobTitle": "Reporter, HuffPost",
+                    "name": "Willa Frej",
+                    "url": "http://www.huffingtonpost.com/author/willa-frej"
+                }
+            ],
+            "dateCreated": "2017-10-25T15:02:14Z",
+            "datePublished": "2017-10-25T15:02:14+00:00",
+            "description": "The Connecticut Democrat acknowledges his bill's slim chances, but wants to rekindle the gun control debate.",
+            "ev:category": [
+                {
+                    "confidence": 0.5,
+                    "name": "/Law & Government"
+                },
+                {
+                    "confidence": 0.5,
+                    "name": "/News"
+                },
+                {
+                    "confidence": 0.5,
+                    "name": "/Law & Government/Public Safety"
+                },
+                {
+                    "confidence": 0.95,
+                    "name": "/Sensitive Subjects"
+                }
+            ],
+            "ev:headlineNormcase": "Dem. senator proposes sweeping gun background checks to strike 'Fear' into GOP",
+            "headline": "Dem. senator proposes sweeping gun background checks to strike 'Fear' into GOP",
+            "id": "https://www.huffingtonpost.com/entry/chris-murphy-gun-background-check_us_59f057cae4b0b7e63265f386?ncid=inblnkushpmg00000009",
+            "image": [
+                {
+                    "height": 338,
+                    "url": "http://assets.evie.com/asset/974b50de9cac206526e21c7522d0247bb002a165/backdrop_hdpi",
+                    "width": 600
+                },
+                {
+                    "height": 450,
+                    "url": "http://assets.evie.com/asset/974b50de9cac206526e21c7522d0247bb002a165/backdrop_xhdpi",
+                    "width": 800
+                },
+                {
+                    "height": 94,
+                    "url": "http://assets.evie.com/asset/974b50de9cac206526e21c7522d0247bb002a165/icon_w94",
+                    "width": 94
+                },
+                {
+                    "height": 141,
+                    "url": "http://assets.evie.com/asset/974b50de9cac206526e21c7522d0247bb002a165/icon_w141",
+                    "width": 141
+                },
+                {
+                    "height": 188,
+                    "url": "http://assets.evie.com/asset/974b50de9cac206526e21c7522d0247bb002a165/icon_w188",
+                    "width": 188
+                },
+                {
+                    "height": 282,
+                    "url": "http://assets.evie.com/asset/974b50de9cac206526e21c7522d0247bb002a165/icon_w282",
+                    "width": 282
+                },
+                {
+                    "height": 376,
+                    "url": "http://assets.evie.com/asset/974b50de9cac206526e21c7522d0247bb002a165/icon_w376",
+                    "width": 376
+                },
+                {
+                    "height": 240,
+                    "url": "http://assets.evie.com/asset/974b50de9cac206526e21c7522d0247bb002a165/tile43_w360",
+                    "width": 360
+                },
+                {
+                    "height": 480,
+                    "url": "http://assets.evie.com/asset/974b50de9cac206526e21c7522d0247bb002a165/tile43_w720",
+                    "width": 720
+                }
+            ],
+            "inLanguage": "en_US",
+            "keywords": [
+                "us-news",
+                "us-presidential-elections",
+                "political-science",
+                "us-congressional-elections",
+                "gun-control",
+                "murder-and-manslaughter",
+                "business-and-finance",
+                "political-movements",
+                "chris-murphy",
+                "@genassign",
+                "@health_gad",
+                "@health_pain",
+                "@health_depression",
+                "@health_adhd",
+                "@health_models",
+                "@health_hiv",
+                "@health_erectile",
+                "@health_ibs",
+                "@team_us_news_ga",
+                "type: news"
+            ],
+            "mainEntity": [
+                {
+                    "@id": "3e69a491-c2c5-441d-a4fd-6a88be1c7eac",
+                    "@type": "ORGANIZATION",
+                    "name": "HuffPost",
+                    "salience": 0.029101565,
+                    "wikipedia_id": "HuffPost"
+                },
+                {
+                    "@id": "094f5cd1-8a76-49e9-b15d-abb391cf4ece",
+                    "@type": "LOCATION",
+                    "name": "Las Vegas",
+                    "salience": 0.017901396,
+                    "wikipedia_id": "Las_Vegas"
+                },
+                {
+                    "@id": "4757e080-d624-48c5-a86c-5d1db2d67be3",
+                    "@type": "ORGANIZATION",
+                    "name": "National Rifle Association",
+                    "salience": 0.010745519,
+                    "wikipedia_id": "National_Rifle_Association"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "ev:topicId": "huffingtonpost.com",
+                "favicon": "http://assets.evie.com/asset/5ce26c3ee02eb8ebb3068a6a0ff08bc9ab6bad3c/favicon_orig",
+                "name": "HuffPost",
+                "url": "https://www.huffingtonpost.com"
+            },
+            "speakable": {
+                "@type": "SpeakableSpecification",
+                "cssSelector": [
+                    ".headline__title",
+                    ".headline__subtitle",
+                    ".js-entry-text"
+                ]
+            },
+            "url": "https://www.huffingtonpost.com/entry/chris-murphy-gun-background-check_us_59f057cae4b0b7e63265f386"
+        },
+        {
+            "@id": "817cb8cb-492b-354a-a4ea-fa878d92e23d",
+            "@type": "NewsArticle",
+            "analytics": {
+                "global_rank": 3038,
+                "global_score": 0.2949487,
+                "layout_time": 1509054419542,
+                "salience": 0.014680585
+            },
+            "author": [
+                {
+                    "@context": "http://schema.org",
+                    "@type": "Person",
+                    "affiliation": {
+                        "@type": "Organization",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "height": 60,
+                            "url": "https://s.m.huffpost.com/assets/hp-amp-101ecf8047b044dce5f3122c63056162580f1c26994c73ae90dbd1c5d1545a71.gif",
+                            "width": 600
+                        },
+                        "name": "HuffPost",
+                        "url": "https://www.huffingtonpost.com"
+                    },
+                    "description": "Elise Foley covers politics and immigration, including the intersection of the two, for HuffPost. She previously worked at the Washington Independent and attended journalism school at Northwestern University.",
+                    "jobTitle": "Immigration & Politics Reporter, HuffPost",
+                    "name": "Elise Foley",
+                    "url": "http://www.huffingtonpost.com/author/elise-foley"
+                },
+                {
+                    "@context": "http://schema.org",
+                    "@type": "Person",
+                    "affiliation": {
+                        "@type": "Organization",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "height": 60,
+                            "url": "https://s.m.huffpost.com/assets/hp-amp-101ecf8047b044dce5f3122c63056162580f1c26994c73ae90dbd1c5d1545a71.gif",
+                            "width": 600
+                        },
+                        "name": "HuffPost",
+                        "url": "https://www.huffingtonpost.com"
+                    },
+                    "description": "Ryan Reilly is HuffPost's senior justice reporter, covering criminal justice, federal law enforcement and legal affairs. His beat takes him to places like Ferguson, Missouri and Guantanamo Bay, Cuba. He started covering the Justice Department in 2009, and was a 2017 Livingston Awards finalist for his reporting on <a href=\"http://data.huffingtonpost.com/2016/jail-deaths\">jail deaths</a>. Reilly is based in Washington, D.C. and can be reached at <a href=\"mailto:ryan.reilly@huffingtonpost.com\">ryan.reilly@huffingtonpost.com</a> or on Signal at 202-527-9261. Follow him on <a class=\"GeneratedLink\" href=\"https://twitter.com/ryanjreilly\" target=\"_blank\"\">Twitter</a>.",
+                    "jobTitle": "Senior Justice Reporter, HuffPost",
+                    "name": "Ryan J. Reilly",
+                    "url": "http://www.huffingtonpost.com/author/ryan-j-reilly"
+                }
+            ],
+            "dateCreated": "2017-10-25T16:24:45Z",
+            "datePublished": "2017-10-25T16:24:45+00:00",
+            "description": "The Trump administration implemented a new policy that obstructs undocumented teens in its custody from obtaining abortions.",
+            "ev:category": [
+                {
+                    "confidence": 0.51,
+                    "name": "/News/Politics"
+                },
+                {
+                    "confidence": 0.79,
+                    "name": "/People & Society"
+                },
+                {
+                    "confidence": 0.51,
+                    "name": "/News"
+                },
+                {
+                    "confidence": 0.79,
+                    "name": "/People & Society/Social Issues & Advocacy"
+                },
+                {
+                    "confidence": 0.75,
+                    "name": "/Sensitive Subjects"
+                }
+            ],
+            "ev:headlineNormcase": "'Jane Doe' got her abortion. Trump policy will still block them for other immigrant teens.",
+            "headline": "'Jane Doe' got her abortion. Trump policy will still block them for other immigrant teens.",
+            "id": "https://www.huffingtonpost.com/entry/undocumented-teen-abortion_us_59ef98a9e4b0bf1f883676c2?ncid=inblnkushpmg00000009",
+            "image": [
+                {
+                    "height": 338,
+                    "url": "http://assets.evie.com/asset/1ff17ed3d75234a3f7e055b5da72c38075c766a1/backdrop_hdpi",
+                    "width": 600
+                },
+                {
+                    "height": 450,
+                    "url": "http://assets.evie.com/asset/1ff17ed3d75234a3f7e055b5da72c38075c766a1/backdrop_xhdpi",
+                    "width": 800
+                },
+                {
+                    "height": 94,
+                    "url": "http://assets.evie.com/asset/1ff17ed3d75234a3f7e055b5da72c38075c766a1/icon_w94",
+                    "width": 94
+                },
+                {
+                    "height": 141,
+                    "url": "http://assets.evie.com/asset/1ff17ed3d75234a3f7e055b5da72c38075c766a1/icon_w141",
+                    "width": 141
+                },
+                {
+                    "height": 188,
+                    "url": "http://assets.evie.com/asset/1ff17ed3d75234a3f7e055b5da72c38075c766a1/icon_w188",
+                    "width": 188
+                },
+                {
+                    "height": 282,
+                    "url": "http://assets.evie.com/asset/1ff17ed3d75234a3f7e055b5da72c38075c766a1/icon_w282",
+                    "width": 282
+                },
+                {
+                    "height": 376,
+                    "url": "http://assets.evie.com/asset/1ff17ed3d75234a3f7e055b5da72c38075c766a1/icon_w376",
+                    "width": 376
+                },
+                {
+                    "height": 240,
+                    "url": "http://assets.evie.com/asset/1ff17ed3d75234a3f7e055b5da72c38075c766a1/tile43_w360",
+                    "width": 360
+                },
+                {
+                    "height": 480,
+                    "url": "http://assets.evie.com/asset/1ff17ed3d75234a3f7e055b5da72c38075c766a1/tile43_w720",
+                    "width": 720
+                }
+            ],
+            "inLanguage": "en_US",
+            "keywords": [
+                "donald-trump",
+                "us-news",
+                "legal-issues",
+                "sex-crimes",
+                "us-politics",
+                "reproductive-health",
+                "abortion-debate",
+                "john-doe",
+                "@health_gad",
+                "@health_pain",
+                "@health_depression",
+                "@health_adhd",
+                "@health_models",
+                "@health_hiv",
+                "@health_erectile",
+                "@health_ibs",
+                "@team_us_news_national_beats",
+                "type: news"
+            ],
+            "mainEntity": [
+                {
+                    "@id": "fc0ec983-722f-40f7-9a43-857b206833d9",
+                    "@type": "PERSON",
+                    "name": "Jane Doe",
+                    "salience": 0.540281,
+                    "wikipedia_id": "John_Doe"
+                },
+                {
+                    "@id": "3e69a491-c2c5-441d-a4fd-6a88be1c7eac",
+                    "@type": "ORGANIZATION",
+                    "name": "HuffPost",
+                    "salience": 0.014680585,
+                    "wikipedia_id": "HuffPost"
+                },
+                {
+                    "@id": "9ca3cf89-c28b-4f68-8ea7-db19fd2ec643",
+                    "@type": "PERSON",
+                    "name": "Trump",
+                    "salience": 0.011518046,
+                    "wikipedia_id": "Donald_Trump"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "ev:topicId": "huffingtonpost.com",
+                "favicon": "http://assets.evie.com/asset/5ce26c3ee02eb8ebb3068a6a0ff08bc9ab6bad3c/favicon_orig",
+                "name": "HuffPost",
+                "url": "https://www.huffingtonpost.com"
+            },
+            "speakable": {
+                "@type": "SpeakableSpecification",
+                "cssSelector": [
+                    ".headline__title",
+                    ".headline__subtitle",
+                    ".js-entry-text"
+                ]
+            },
+            "url": "https://www.huffingtonpost.com/entry/undocumented-teen-abortion_us_59ef98a9e4b0bf1f883676c2"
+        },
+        {
+            "@id": "bc2c54cd-5033-3a92-8830-8d950999b435",
+            "@type": "NewsArticle",
+            "analytics": {
+                "global_rank": 15445,
+                "global_score": 0.0033723055,
+                "layout_time": 1509054419542,
+                "salience": 0.14754781
+            },
+            "author": {
+                "@context": "http://schema.org",
+                "@type": "Person",
+                "affiliation": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "height": 60,
+                        "url": "https://s.m.huffpost.com/assets/hp-amp-101ecf8047b044dce5f3122c63056162580f1c26994c73ae90dbd1c5d1545a71.gif",
+                        "width": 600
+                    },
+                    "name": "HuffPost",
+                    "url": "https://www.huffingtonpost.com"
+                },
+                "description": "Paul Josephson",
+                "jobTitle": "Associate Producer, The Huffington Post",
+                "name": "Paul Josephson",
+                "url": "http://www.huffingtonpost.com/author/paul-josephson"
+            },
+            "dateCreated": "2017-10-24T20:15:01Z",
+            "datePublished": "2017-10-24T20:15:01+00:00",
+            "description": "HuffPost traveled to Nigeria to document efforts to fight this illness.",
+            "ev:category": [
+                {
+                    "confidence": 0.57,
+                    "name": "/Health"
+                },
+                {
+                    "confidence": 0.57,
+                    "name": "/Health/Health Conditions/Infectious Diseases"
+                },
+                {
+                    "confidence": 0.57,
+                    "name": "/Health/Health Conditions"
+                }
+            ],
+            "ev:headlineNormcase": "WATCH: What life is like with the disfiguring disease elephantiasis",
+            "headline": "WATCH: What life is like with the disfiguring disease elephantiasis",
+            "id": "https://www.huffingtonpost.com/entry/elephantiasis-nigeria-360-film_us_59e7a455e4b0d0e4fe6cdb89?ncid=inblnkushpmg00000009",
+            "image": [
+                {
+                    "height": 338,
+                    "url": "http://assets.evie.com/asset/0a850ce874c0aad0887a0bbe701822bf62799950/backdrop_hdpi",
+                    "width": 600
+                },
+                {
+                    "height": 450,
+                    "url": "http://assets.evie.com/asset/0a850ce874c0aad0887a0bbe701822bf62799950/backdrop_xhdpi",
+                    "width": 800
+                },
+                {
+                    "height": 94,
+                    "url": "http://assets.evie.com/asset/0a850ce874c0aad0887a0bbe701822bf62799950/icon_w94",
+                    "width": 94
+                },
+                {
+                    "height": 141,
+                    "url": "http://assets.evie.com/asset/0a850ce874c0aad0887a0bbe701822bf62799950/icon_w141",
+                    "width": 141
+                },
+                {
+                    "height": 188,
+                    "url": "http://assets.evie.com/asset/0a850ce874c0aad0887a0bbe701822bf62799950/icon_w188",
+                    "width": 188
+                },
+                {
+                    "height": 282,
+                    "url": "http://assets.evie.com/asset/0a850ce874c0aad0887a0bbe701822bf62799950/icon_w282",
+                    "width": 282
+                },
+                {
+                    "height": 376,
+                    "url": "http://assets.evie.com/asset/0a850ce874c0aad0887a0bbe701822bf62799950/icon_w376",
+                    "width": 376
+                },
+                {
+                    "height": 240,
+                    "url": "http://assets.evie.com/asset/0a850ce874c0aad0887a0bbe701822bf62799950/tile43_w360",
+                    "width": 360
+                },
+                {
+                    "height": 480,
+                    "url": "http://assets.evie.com/asset/0a850ce874c0aad0887a0bbe701822bf62799950/tile43_w720",
+                    "width": 720
+                }
+            ],
+            "inLanguage": "en_US",
+            "keywords": [
+                "infections",
+                "bill-melinda-gates-foundation",
+                "out-of-sight",
+                "@projectzerofilms",
+                "@gates",
+                "@health_ibs",
+                "@health_models",
+                "@team_us_news_national_beats",
+                "type: news"
+            ],
+            "mainEntity": [
+                {
+                    "@id": "3e69a491-c2c5-441d-a4fd-6a88be1c7eac",
+                    "@type": "ORGANIZATION",
+                    "name": "HuffPost",
+                    "salience": 0.14754781,
+                    "wikipedia_id": "HuffPost"
+                },
+                {
+                    "@id": "9bdf719d-202f-414f-8e00-5580a3bdb1e6",
+                    "@type": "LOCATION",
+                    "name": "Nigeria",
+                    "salience": 0.006110037,
+                    "wikipedia_id": "Nigeria"
+                },
+                {
+                    "@id": "9e317ccb-a340-4aaa-8d8c-26e4cce10cd2",
+                    "@type": "WORK_OF_ART",
+                    "name": "Out of Sight",
+                    "salience": 0.004175022,
+                    "wikipedia_id": "Out_of_Sight"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "ev:topicId": "huffingtonpost.com",
+                "favicon": "http://assets.evie.com/asset/5ce26c3ee02eb8ebb3068a6a0ff08bc9ab6bad3c/favicon_orig",
+                "name": "HuffPost",
+                "url": "https://www.huffingtonpost.com"
+            },
+            "speakable": {
+                "@type": "SpeakableSpecification",
+                "cssSelector": [
+                    ".headline__title",
+                    ".headline__subtitle",
+                    ".js-entry-text"
+                ]
+            },
+            "url": "https://www.huffingtonpost.com/entry/elephantiasis-nigeria-360-film_us_59e7a455e4b0d0e4fe6cdb89"
+        },
+        {
+            "@id": "7b5cddec-bfc5-39bc-8cb8-00e5145a6c81",
+            "@type": "NewsArticle",
+            "analytics": {
+                "global_rank": 10442,
+                "global_score": 0.036387105,
+                "layout_time": 1509054419542,
+                "salience": 0.08993479
+            },
+            "author": [
+                {
+                    "@context": "http://schema.org",
+                    "@type": "Person",
+                    "affiliation": {
+                        "@type": "Organization",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "height": 60,
+                            "url": "https://s.m.huffpost.com/assets/hp-amp-101ecf8047b044dce5f3122c63056162580f1c26994c73ae90dbd1c5d1545a71.gif",
+                            "width": 600
+                        },
+                        "name": "HuffPost",
+                        "url": "https://www.huffingtonpost.com"
+                    },
+                    "description": "Jenna Amatulli is a trends reporter for HuffPost. She's worked and interned at Vanity Fair, Apple, BULLETT, and Conde Nast Traveler. In addition to her severe oyster addiction, she's a Netflix enthusiast, a red wine drinker, and a voracious reader. Follow her on Twitter/Instagram: @ohheyjenna.",
+                    "jobTitle": "Trends Reporter, HuffPost",
+                    "name": "Jenna Amatulli",
+                    "url": "http://www.huffingtonpost.com/author/jenna-amatulli"
+                },
+                {
+                    "@context": "http://schema.org",
+                    "@type": "Person",
+                    "affiliation": {
+                        "@type": "Organization",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "height": 60,
+                            "url": "https://s.m.huffpost.com/assets/hp-amp-101ecf8047b044dce5f3122c63056162580f1c26994c73ae90dbd1c5d1545a71.gif",
+                            "width": 600
+                        },
+                        "name": "HuffPost",
+                        "url": "https://www.huffingtonpost.com"
+                    },
+                    "description": "Photo Editor at HuffPost",
+                    "jobTitle": "Photo Editor, HuffPost",
+                    "name": "Damon Dahlen",
+                    "url": "http://www.huffingtonpost.com/author/damon-dahlen"
+                }
+            ],
+            "dateCreated": "2017-10-25T19:42:25Z",
+            "datePublished": "2017-10-25T19:42:25+00:00",
+            "description": "A park visit, a panel and other highlights of our time in the city named after the \"River of the Monks.\"",
+            "ev:headlineNormcase": "Days in Des Moines: HuffPost's Listen to America tour stops in Iowa",
+            "headline": "Days in Des Moines: HuffPost's Listen to America tour stops in Iowa",
+            "id": "https://www.huffingtonpost.com/entry/listen-to-america-des-moines-iowa-photos_us_59f0da00e4b0af27f5891a68?ncid=inblnkushpmg00000009",
+            "image": [
+                {
+                    "height": 338,
+                    "url": "http://assets.evie.com/asset/bcb03345202b2ac1fc5f19394a6026fbb18132bf/backdrop_hdpi",
+                    "width": 600
+                },
+                {
+                    "height": 450,
+                    "url": "http://assets.evie.com/asset/bcb03345202b2ac1fc5f19394a6026fbb18132bf/backdrop_xhdpi",
+                    "width": 800
+                },
+                {
+                    "height": 94,
+                    "url": "http://assets.evie.com/asset/bcb03345202b2ac1fc5f19394a6026fbb18132bf/icon_w94",
+                    "width": 94
+                },
+                {
+                    "height": 141,
+                    "url": "http://assets.evie.com/asset/bcb03345202b2ac1fc5f19394a6026fbb18132bf/icon_w141",
+                    "width": 141
+                },
+                {
+                    "height": 188,
+                    "url": "http://assets.evie.com/asset/bcb03345202b2ac1fc5f19394a6026fbb18132bf/icon_w188",
+                    "width": 188
+                },
+                {
+                    "height": 282,
+                    "url": "http://assets.evie.com/asset/bcb03345202b2ac1fc5f19394a6026fbb18132bf/icon_w282",
+                    "width": 282
+                },
+                {
+                    "height": 376,
+                    "url": "http://assets.evie.com/asset/bcb03345202b2ac1fc5f19394a6026fbb18132bf/icon_w376",
+                    "width": 376
+                },
+                {
+                    "height": 240,
+                    "url": "http://assets.evie.com/asset/bcb03345202b2ac1fc5f19394a6026fbb18132bf/tile43_w360",
+                    "width": 360
+                },
+                {
+                    "height": 480,
+                    "url": "http://assets.evie.com/asset/bcb03345202b2ac1fc5f19394a6026fbb18132bf/tile43_w720",
+                    "width": 720
+                }
+            ],
+            "inLanguage": "en_US",
+            "keywords": [
+                "us-news",
+                "huffington-post",
+                "iowa",
+                "des-moines-iowa",
+                "iowa-state-capitol",
+                "des-moines-river",
+                "@bustour",
+                "@bustournewsletter",
+                "@health_depression",
+                "@health_ibs",
+                "@health_models",
+                "@team_us_news_trends",
+                "type: news"
+            ],
+            "mainEntity": [
+                {
+                    "@id": "c2f7fabd-a82e-404a-aca5-7f9d1dbe4c73",
+                    "@type": "LOCATION",
+                    "name": "Iowa",
+                    "salience": 0.11941075,
+                    "wikipedia_id": "Iowa"
+                },
+                {
+                    "@id": "3e69a491-c2c5-441d-a4fd-6a88be1c7eac",
+                    "@type": "ORGANIZATION",
+                    "name": "HuffPost",
+                    "salience": 0.08993479,
+                    "wikipedia_id": "HuffPost"
+                },
+                {
+                    "@id": "5fcb5c89-212c-4c44-8c9c-fc036ac0e757",
+                    "@type": "LOCATION",
+                    "name": "Rivière des Moines",
+                    "salience": 0.020066777,
+                    "wikipedia_id": "Des_Moines_River"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "ev:topicId": "huffingtonpost.com",
+                "favicon": "http://assets.evie.com/asset/5ce26c3ee02eb8ebb3068a6a0ff08bc9ab6bad3c/favicon_orig",
+                "name": "HuffPost",
+                "url": "https://www.huffingtonpost.com"
+            },
+            "speakable": {
+                "@type": "SpeakableSpecification",
+                "cssSelector": [
+                    ".headline__title",
+                    ".headline__subtitle",
+                    ".js-entry-text"
+                ]
+            },
+            "url": "https://www.huffingtonpost.com/entry/listen-to-america-des-moines-iowa-photos_us_59f0da00e4b0af27f5891a68"
+        },
+        {
+            "@id": "960a227e-fcab-3f75-9229-ed1ae2c1df35",
+            "@type": "NewsArticle",
+            "analytics": {
+                "global_rank": 7100,
+                "global_score": 0.11973488,
+                "layout_time": 1509054419542,
+                "salience": 0.029906068
+            },
+            "author": {
+                "@context": "http://schema.org",
+                "@type": "Person",
+                "affiliation": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "height": 60,
+                        "url": "https://s.m.huffpost.com/assets/hp-amp-101ecf8047b044dce5f3122c63056162580f1c26994c73ae90dbd1c5d1545a71.gif",
+                        "width": 600
+                    },
+                    "name": "HuffPost",
+                    "url": "https://www.huffingtonpost.com"
+                },
+                "description": "Carolina Moreno is a Latino Voices Editor for HuffPost, focusing on Latino issues, culture and entertainment. She's an NYU graduate with a degree in Journalism, Latin American Studies and French language. Her interests include Inter-American relations, human rights on both sides of the canal, race and diversity. She's in a loving but contradictory relationship with the world, humanity and what connects the two. To summarize: Joy junkie, cookie monster, LatAm enthusiast & diversity advocate.",
+                "jobTitle": "Latino Voices Editor, HuffPost",
+                "name": "Carolina Moreno",
+                "url": "http://www.huffingtonpost.com/author/carolina-moreno"
+            },
+            "dateCreated": "2017-10-24T22:06:29Z",
+            "datePublished": "2017-10-24T22:06:29+00:00",
+            "description": "State epidemiologist Carmen Deseda told HuffPost there is a \"fear\" of outbreak.",
+            "ev:category": [
+                {
+                    "confidence": 0.56,
+                    "name": "/Health"
+                },
+                {
+                    "confidence": 0.56,
+                    "name": "/Health/Public Health"
+                },
+                {
+                    "confidence": 0.99,
+                    "name": "/Health/Health Conditions/Infectious Diseases"
+                },
+                {
+                    "confidence": 0.99,
+                    "name": "/Health/Health Conditions"
+                }
+            ],
+            "ev:headlineNormcase": "3 deaths linked to animal-borne bacteria confirmed in Puerto Rico",
+            "headline": "3 deaths linked to animal-borne bacteria confirmed in Puerto Rico",
+            "id": "https://www.huffingtonpost.com/entry/deaths-animal-borne-bacteria-puerto-rico_us_59efa396e4b04917c593f1d4?ncid=inblnkushpmg00000009",
+            "image": [
+                {
+                    "height": 338,
+                    "url": "http://assets.evie.com/asset/7d5911848ff30701401fa55e3ae93cb12763049a/backdrop_hdpi",
+                    "width": 600
+                },
+                {
+                    "height": 450,
+                    "url": "http://assets.evie.com/asset/7d5911848ff30701401fa55e3ae93cb12763049a/backdrop_xhdpi",
+                    "width": 800
+                },
+                {
+                    "height": 94,
+                    "url": "http://assets.evie.com/asset/7d5911848ff30701401fa55e3ae93cb12763049a/icon_w94",
+                    "width": 94
+                },
+                {
+                    "height": 141,
+                    "url": "http://assets.evie.com/asset/7d5911848ff30701401fa55e3ae93cb12763049a/icon_w141",
+                    "width": 141
+                },
+                {
+                    "height": 188,
+                    "url": "http://assets.evie.com/asset/7d5911848ff30701401fa55e3ae93cb12763049a/icon_w188",
+                    "width": 188
+                },
+                {
+                    "height": 282,
+                    "url": "http://assets.evie.com/asset/7d5911848ff30701401fa55e3ae93cb12763049a/icon_w282",
+                    "width": 282
+                },
+                {
+                    "height": 376,
+                    "url": "http://assets.evie.com/asset/7d5911848ff30701401fa55e3ae93cb12763049a/icon_w376",
+                    "width": 376
+                },
+                {
+                    "height": 240,
+                    "url": "http://assets.evie.com/asset/7d5911848ff30701401fa55e3ae93cb12763049a/tile43_w360",
+                    "width": 360
+                },
+                {
+                    "height": 480,
+                    "url": "http://assets.evie.com/asset/7d5911848ff30701401fa55e3ae93cb12763049a/tile43_w720",
+                    "width": 720
+                }
+            ],
+            "inLanguage": "en_US",
+            "keywords": [
+                "puerto-rico",
+                "centers-for-disease-control-and-prevention",
+                "cold-and-flu",
+                "pathogenic-bacteria",
+                "@ads_scary",
+                "@health_ibs",
+                "@health_models",
+                "@team_us_voices_lv",
+                "type: news"
+            ],
+            "mainEntity": [
+                {
+                    "@id": "e126d556-c1ce-4f23-b1dc-0dd1d19142a0",
+                    "@type": "LOCATION",
+                    "name": "Puerto Rico",
+                    "salience": 0.083467714,
+                    "wikipedia_id": "Puerto_Rico"
+                },
+                {
+                    "@id": "06c01b9f-66cd-45ed-aaa0-1e3c086caf23",
+                    "@type": "LOCATION",
+                    "name": "Deseda",
+                    "salience": 0.047140934,
+                    "wikipedia_id": "Lake_Deseda"
+                },
+                {
+                    "@id": "3e69a491-c2c5-441d-a4fd-6a88be1c7eac",
+                    "@type": "ORGANIZATION",
+                    "name": "HuffPost",
+                    "salience": 0.029906068,
+                    "wikipedia_id": "HuffPost"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "ev:topicId": "huffingtonpost.com",
+                "favicon": "http://assets.evie.com/asset/5ce26c3ee02eb8ebb3068a6a0ff08bc9ab6bad3c/favicon_orig",
+                "name": "HuffPost",
+                "url": "https://www.huffingtonpost.com"
+            },
+            "speakable": {
+                "@type": "SpeakableSpecification",
+                "cssSelector": [
+                    ".headline__title",
+                    ".headline__subtitle",
+                    ".js-entry-text"
+                ]
+            },
+            "url": "https://www.huffingtonpost.com/entry/deaths-animal-borne-bacteria-puerto-rico_us_59efa396e4b04917c593f1d4"
+        },
+        {
+            "@id": "20bea531-3a7e-3ad3-8396-4aff4b844d5a",
+            "@type": "NewsArticle",
+            "analytics": {
+                "global_rank": 6399,
+                "global_score": 0.14328404,
+                "layout_time": 1509054419542,
+                "salience": 0.0049796323
+            },
+            "author": {
+                "@context": "http://schema.org",
+                "@type": "Person",
+                "affiliation": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "height": 60,
+                        "url": "https://s.m.huffpost.com/assets/hp-amp-101ecf8047b044dce5f3122c63056162580f1c26994c73ae90dbd1c5d1545a71.gif",
+                        "width": 600
+                    },
+                    "name": "HuffPost",
+                    "url": "https://www.huffingtonpost.com"
+                },
+                "description": "Entertainment Editorial Director, HuffPost",
+                "jobTitle": "Entertainment Editorial Director, HuffPost",
+                "name": "Lauren Moraski",
+                "url": "http://www.huffingtonpost.com/author/lauren-moraski"
+            },
+            "dateCreated": "2017-10-26T16:59:21Z",
+            "datePublished": "2017-10-26T16:59:21+00:00",
+            "description": "The singer tells HuffPost she's in the best place of her life.",
+            "ev:category": [
+                {
+                    "confidence": 0.63,
+                    "name": "/Arts & Entertainment"
+                },
+                {
+                    "confidence": 0.63,
+                    "name": "/Arts & Entertainment/Music & Audio"
+                },
+                {
+                    "confidence": 0.63,
+                    "name": "/Arts & Entertainment/Music & Audio/Pop Music"
+                }
+            ],
+            "ev:headlineNormcase": "Kelly Clarkson brings a whole lot of sass on new album",
+            "ev:topic": [
+                {
+                    "@id": "8b098a6b-4764-3d83-ba9c-44fa39c47b00",
+                    "@type": "ev:topicPublisher",
+                    "name": "HuffPost"
+                },
+                {
+                    "@id": "5c7868e2-706a-49ae-948a-0cb9a1434b2b",
+                    "@type": "ev:topicEntity",
+                    "name": "Kelly Clarkson",
+                    "salience": 0.7091016
+                },
+                {
+                    "@id": "3e69a491-c2c5-441d-a4fd-6a88be1c7eac",
+                    "@type": "ev:topicEntity",
+                    "name": "HuffPost",
+                    "salience": 0.017406084
+                },
+                {
+                    "@id": "c2d016a9-963f-46eb-8ff4-de427edc8ff9",
+                    "@type": "ev:topicEntity",
+                    "name": "RCA",
+                    "salience": 0.004390968
+                },
+                {
+                    "@id": "7540d3c7-f2ce-3167-95ba-c5c370786b9a",
+                    "@type": "ev:topicCategory",
+                    "confidence": 0.77,
+                    "name": "Arts & Entertainment"
+                },
+                {
+                    "@id": "38f49147-c7cc-3073-bc7a-3329c282d4dc",
+                    "@type": "ev:topicMappedCategory",
+                    "name": "Entertainment"
+                },
+                {
+                    "@id": "50892cf3-fcfa-3229-8802-4d6b7025fe4f",
+                    "@type": "ev:topicCategory",
+                    "confidence": 0.65,
+                    "name": "Music & Audio"
+                },
+                {
+                    "@id": "5bebbcb4-7d99-3c63-a1df-9760df73229d",
+                    "@type": "ev:topicCategory",
+                    "confidence": 0.62,
+                    "name": "Pop Music"
+                }
+            ],
+            "headline": "Kelly Clarkson brings a whole lot of sass on new album",
+            "id": "https://www.huffingtonpost.com/entry/kelly-clarkson-new-album-meaning-of-life_us_59f1fa22e4b07fdc5fbc6889?ncid=inblnkushpmg00000009",
+            "image": [
+                {
+                    "height": 338,
+                    "url": "http://assets.evie.com/asset/a9b4f57e640be2efa5ffd3178fed28ba9f6d0f4e/backdrop_hdpi",
+                    "width": 600
+                },
+                {
+                    "height": 450,
+                    "url": "http://assets.evie.com/asset/a9b4f57e640be2efa5ffd3178fed28ba9f6d0f4e/backdrop_xhdpi",
+                    "width": 800
+                },
+                {
+                    "height": 94,
+                    "url": "http://assets.evie.com/asset/a9b4f57e640be2efa5ffd3178fed28ba9f6d0f4e/icon_w94",
+                    "width": 94
+                },
+                {
+                    "height": 141,
+                    "url": "http://assets.evie.com/asset/a9b4f57e640be2efa5ffd3178fed28ba9f6d0f4e/icon_w141",
+                    "width": 141
+                },
+                {
+                    "height": 188,
+                    "url": "http://assets.evie.com/asset/a9b4f57e640be2efa5ffd3178fed28ba9f6d0f4e/icon_w188",
+                    "width": 188
+                },
+                {
+                    "height": 282,
+                    "url": "http://assets.evie.com/asset/a9b4f57e640be2efa5ffd3178fed28ba9f6d0f4e/icon_w282",
+                    "width": 282
+                },
+                {
+                    "height": 376,
+                    "url": "http://assets.evie.com/asset/a9b4f57e640be2efa5ffd3178fed28ba9f6d0f4e/icon_w376",
+                    "width": 376
+                },
+                {
+                    "height": 240,
+                    "url": "http://assets.evie.com/asset/a9b4f57e640be2efa5ffd3178fed28ba9f6d0f4e/tile43_w360",
+                    "width": 360
+                },
+                {
+                    "height": 480,
+                    "url": "http://assets.evie.com/asset/a9b4f57e640be2efa5ffd3178fed28ba9f6d0f4e/tile43_w720",
+                    "width": 720
+                }
+            ],
+            "inLanguage": "en_US",
+            "keywords": [
+                "celebrities",
+                "entertainment-originals",
+                "pop-music",
+                "kelly-clarkson",
+                "@sponsor_popofculture",
+                "@ent",
+                "@health_erectile",
+                "@health_depression",
+                "@health_ibs",
+                "@health_models",
+                "@team_us_entertainment",
+                "type: news"
+            ],
+            "mainEntity": [
+                {
+                    "@id": "5c7868e2-706a-49ae-948a-0cb9a1434b2b",
+                    "@type": "PERSON",
+                    "name": "Clarkson",
+                    "salience": 0.7091016,
+                    "wikipedia_id": "Kelly_Clarkson"
+                },
+                {
+                    "@id": "3e69a491-c2c5-441d-a4fd-6a88be1c7eac",
+                    "@type": "ORGANIZATION",
+                    "name": "HuffPost",
+                    "salience": 0.0049796323,
+                    "wikipedia_id": "HuffPost"
+                },
+                {
+                    "@id": "c2d016a9-963f-46eb-8ff4-de427edc8ff9",
+                    "@type": "ORGANIZATION",
+                    "name": "RCA",
+                    "salience": 0.004390968,
+                    "wikipedia_id": "RCA"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "ev:topicId": "huffingtonpost.com",
+                "favicon": "http://assets.evie.com/asset/5ce26c3ee02eb8ebb3068a6a0ff08bc9ab6bad3c/favicon_orig",
+                "name": "HuffPost",
+                "url": "https://www.huffingtonpost.com"
+            },
+            "speakable": {
+                "@type": "SpeakableSpecification",
+                "cssSelector": [
+                    ".headline__title",
+                    ".headline__subtitle",
+                    ".js-entry-text"
+                ]
+            },
+            "url": "https://www.huffingtonpost.com/entry/kelly-clarkson-new-album-meaning-of-life_us_59f1fa22e4b07fdc5fbc6889"
+        },
+        {
+            "@id": "92433ea9-bd04-37f6-bde2-fc0f94165109",
+            "@type": "NewsArticle",
+            "analytics": {
+                "global_rank": 8589,
+                "global_score": 0.07460006,
+                "layout_time": 1509054419542,
+                "salience": 0.0053767976
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Suzanne Lucas"
+            },
+            "dateCreated": "2017-10-25T05:01%Z",
+            "datePublished": "2017-10-25T09:01:14+00:00",
+            "description": "Men repeat, Why can't women?",
+            "ev:category": [
+                {
+                    "confidence": 0.62,
+                    "name": "/Arts & Entertainment"
+                },
+                {
+                    "confidence": 0.62,
+                    "name": "/Arts & Entertainment/Celebrities & Entertainment News"
+                },
+                {
+                    "confidence": 0.84,
+                    "name": "/News"
+                }
+            ],
+            "ev:headlineNormcase": "Why Arianna Huffington is wearing the same dress over and over (and you should too)",
+            "headline": "Why Arianna Huffington is wearing the same dress over and over (and you should too)",
+            "id": "https://www.inc.com/suzanne-lucas/why-arianna-huffington-is-wearing-same-dress-over-over-and-you-should-too.html",
+            "image": [
+                {
+                    "height": 338,
+                    "url": "http://assets.evie.com/asset/7d8b3dfe64f1459ac32227612c692d41cafc3e9a/backdrop_hdpi",
+                    "width": 600
+                },
+                {
+                    "height": 94,
+                    "url": "http://assets.evie.com/asset/7d8b3dfe64f1459ac32227612c692d41cafc3e9a/icon_w94",
+                    "width": 94
+                },
+                {
+                    "height": 141,
+                    "url": "http://assets.evie.com/asset/7d8b3dfe64f1459ac32227612c692d41cafc3e9a/icon_w141",
+                    "width": 141
+                },
+                {
+                    "height": 188,
+                    "url": "http://assets.evie.com/asset/7d8b3dfe64f1459ac32227612c692d41cafc3e9a/icon_w188",
+                    "width": 188
+                },
+                {
+                    "height": 282,
+                    "url": "http://assets.evie.com/asset/7d8b3dfe64f1459ac32227612c692d41cafc3e9a/icon_w282",
+                    "width": 282
+                },
+                {
+                    "height": 376,
+                    "url": "http://assets.evie.com/asset/7d8b3dfe64f1459ac32227612c692d41cafc3e9a/icon_w376",
+                    "width": 376
+                },
+                {
+                    "height": 240,
+                    "url": "http://assets.evie.com/asset/7d8b3dfe64f1459ac32227612c692d41cafc3e9a/tile43_w360",
+                    "width": 360
+                }
+            ],
+            "keywords": [
+                "Lead",
+                "People",
+                "HR/Benefits",
+                "Suzanne Lucas",
+                ""
+            ],
+            "mainEntity": [
+                {
+                    "@id": "40652937-01b7-4fa1-b1c1-778928ff72bf",
+                    "@type": "PERSON",
+                    "name": "Arianna Huffington",
+                    "salience": 0.11946425,
+                    "wikipedia_id": "Arianna_Huffington"
+                },
+                {
+                    "@id": "bb993b23-4d99-469b-9b22-afe78353d986",
+                    "@type": "LOCATION",
+                    "name": "Amsterdam",
+                    "salience": 0.012323628,
+                    "wikipedia_id": "Amsterdam"
+                },
+                {
+                    "@id": "3e69a491-c2c5-441d-a4fd-6a88be1c7eac",
+                    "@type": "ORGANIZATION",
+                    "name": "Huffington",
+                    "salience": 0.0053767976,
+                    "wikipedia_id": "HuffPost"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "ev:topicId": "inc.com",
+                "favicon": "http://assets.evie.com/asset/2d47c07b096a174c504f7f2fdc50ae418c975054/favicon_orig",
+                "name": "Inc."
+            },
+            "url": "https://www.inc.com/suzanne-lucas/why-arianna-huffington-is-wearing-same-dress-over-over-and-you-should-too.html"
+        },
+        {
+            "@id": "3cbd3451-edd8-39d5-bced-0549f100232c",
+            "@type": "NewsArticle",
+            "analytics": {
+                "global_rank": 17910,
+                "global_score": 0.00092840334,
+                "layout_time": 1509054419542,
+                "salience": 0.039365668
+            },
+            "author": {
+                "@type": "Person",
+                "name": ""
+            },
+            "dateCreated": "2017-10-24T02:20:00.000Z",
+            "datePublished": "2017-10-24T02:20:00+00:00",
+            "description": "She says the company could have been as successful without the ‘brilliant jerks.’",
+            "ev:category": [
+                {
+                    "confidence": 0.92,
+                    "name": "/News"
+                }
+            ],
+            "ev:headlineNormcase": "Arianna Huffington on the culture at Uber",
+            "hasPart": {
+                "@type": "WebPageElement",
+                "cssSelector": ".paywall",
+                "isAccessibleForFree": "false"
+            },
+            "headline": "Arianna Huffington on the culture at Uber",
+            "id": "SB11402630260896243904404583444944090659984",
+            "image": [
+                {
+                    "height": 338,
+                    "url": "http://assets.evie.com/asset/331f140ca0a030a0d56f98b6043b12a57f9ade89/backdrop_hdpi",
+                    "width": 600
+                },
+                {
+                    "height": 94,
+                    "url": "http://assets.evie.com/asset/331f140ca0a030a0d56f98b6043b12a57f9ade89/icon_w94",
+                    "width": 94
+                },
+                {
+                    "height": 141,
+                    "url": "http://assets.evie.com/asset/331f140ca0a030a0d56f98b6043b12a57f9ade89/icon_w141",
+                    "width": 141
+                },
+                {
+                    "height": 188,
+                    "url": "http://assets.evie.com/asset/331f140ca0a030a0d56f98b6043b12a57f9ade89/icon_w188",
+                    "width": 188
+                },
+                {
+                    "height": 282,
+                    "url": "http://assets.evie.com/asset/331f140ca0a030a0d56f98b6043b12a57f9ade89/icon_w282",
+                    "width": 282
+                },
+                {
+                    "height": 376,
+                    "url": "http://assets.evie.com/asset/331f140ca0a030a0d56f98b6043b12a57f9ade89/icon_w376",
+                    "width": 376
+                },
+                {
+                    "height": 240,
+                    "url": "http://assets.evie.com/asset/331f140ca0a030a0d56f98b6043b12a57f9ade89/tile43_w360",
+                    "width": 360
+                }
+            ],
+            "isAccessibleForFree": "false",
+            "keywords": [
+                "arianna huffington",
+                " burnout",
+                " corporate culture",
+                " d.live",
+                " dlive",
+                "huffington post",
+                " journal conference",
+                "journal reports",
+                " silicon valley",
+                " social media",
+                " stress",
+                " tech conference",
+                " tech culture",
+                " technology conference",
+                "thrive global",
+                "vc industry news",
+                " wall street journal conference",
+                " wsj conference",
+                " wsjd",
+                "YouTube",
+                "Uber Technologies",
+                "Facebook Cl A",
+                "FB",
+                "Twitter",
+                "TWTR",
+                "Alphabet Cl C",
+                "GOOG",
+                "Sheryl Sandberg",
+                "Harvey Weinstein",
+                "Arianna Huffington",
+                "Dara Khosrowshahi",
+                "labor",
+                "personnel",
+                "corporate",
+                "industrial news",
+                "workplace discrimination",
+                "political",
+                "general news",
+                "society",
+                "community",
+                "discrimination",
+                "human rights",
+                "civil liberties",
+                "psychology",
+                "sciences",
+                "humanities",
+                "social issues",
+                "telecommunications",
+                "women's rights",
+                "telecommunications equipment",
+                "mobile communications devices",
+                "printing",
+                "publishing",
+                "newspaper publishing",
+                "retail",
+                "wholesale",
+                "etailing",
+                "trusts",
+                "funds",
+                "financial vehicles",
+                "internet search engines",
+                "e-commerce",
+                "financial services",
+                "online service providers",
+                "investing",
+                "securities",
+                "media",
+                "entertainment",
+                "internet portals",
+                "social media platforms",
+                "tools",
+                "technology",
+                "sharing economy services"
+            ],
+            "mainEntity": [
+                {
+                    "@id": "40652937-01b7-4fa1-b1c1-778928ff72bf",
+                    "@type": "PERSON",
+                    "name": "Arianna Huffington",
+                    "salience": 0.29846516,
+                    "wikipedia_id": "Arianna_Huffington"
+                },
+                {
+                    "@id": "fc1199d4-9a8c-4f60-8e4e-c1da2f2df19e",
+                    "@type": "ORGANIZATION",
+                    "name": "Uber Arianna Huffington",
+                    "salience": 0.075045735,
+                    "wikipedia_id": "Uber_(company)"
+                },
+                {
+                    "@id": "3e69a491-c2c5-441d-a4fd-6a88be1c7eac",
+                    "@type": "ORGANIZATION",
+                    "name": "Huffington Post",
+                    "salience": 0.039365668,
+                    "wikipedia_id": "HuffPost"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "ev:topicId": "wsj.com",
+                "favicon": "http://assets.evie.com/asset/ff675863a042e654eed352a1d804b7cfd9874cfe/favicon_orig",
+                "name": "Wall Street Journal"
+            },
+            "url": "https://www.wsj.com/articles/arianna-huffington-on-the-culture-at-uber-1508811600"
+        },
+        {
+            "@id": "6d50b827-1ce9-389b-9230-0a0ade846b5e",
+            "@type": "NewsArticle",
+            "analytics": {
+                "global_rank": 16379,
+                "global_score": 0.0021236811,
+                "layout_time": 1509054419542,
+                "salience": 0.0016957697
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Jordan Kasteler"
+            },
+            "dateCreated": "2017-10-24T13:26%Z",
+            "datePublished": "2017-10-24T17:26:36+00:00",
+            "description": "Whether we're talking about building a social-media following, developing online video courses or learning analytics and chatbots, patience will be your ally.",
+            "ev:category": [
+                {
+                    "confidence": 0.61,
+                    "name": "/Business & Industrial/Business Services"
+                },
+                {
+                    "confidence": 0.61,
+                    "name": "/Business & Industrial"
+                }
+            ],
+            "ev:headlineNormcase": "Five ways social media managers can gain a competitive edge",
+            "headline": "Five ways social media managers can gain a competitive edge",
+            "id": "https://www.inc.com/jordan-kasteler/five-ways-social-media-managers-can-gain-a-competitive-edge.html",
+            "image": [
+                {
+                    "height": 338,
+                    "url": "http://assets.evie.com/asset/5dfe348e2084e6c15025e15fd982f0655987efcb/backdrop_hdpi",
+                    "width": 600
+                },
+                {
+                    "height": 94,
+                    "url": "http://assets.evie.com/asset/5dfe348e2084e6c15025e15fd982f0655987efcb/icon_w94",
+                    "width": 94
+                },
+                {
+                    "height": 141,
+                    "url": "http://assets.evie.com/asset/5dfe348e2084e6c15025e15fd982f0655987efcb/icon_w141",
+                    "width": 141
+                },
+                {
+                    "height": 188,
+                    "url": "http://assets.evie.com/asset/5dfe348e2084e6c15025e15fd982f0655987efcb/icon_w188",
+                    "width": 188
+                },
+                {
+                    "height": 282,
+                    "url": "http://assets.evie.com/asset/5dfe348e2084e6c15025e15fd982f0655987efcb/icon_w282",
+                    "width": 282
+                },
+                {
+                    "height": 376,
+                    "url": "http://assets.evie.com/asset/5dfe348e2084e6c15025e15fd982f0655987efcb/icon_w376",
+                    "width": 376
+                },
+                {
+                    "height": 240,
+                    "url": "http://assets.evie.com/asset/5dfe348e2084e6c15025e15fd982f0655987efcb/tile43_w360",
+                    "width": 360
+                }
+            ],
+            "keywords": [
+                "Grow",
+                "Marketing",
+                "Jordan Kasteler",
+                ""
+            ],
+            "mainEntity": [
+                {
+                    "@id": "d7f5a9be-e4e3-4e07-8c37-96575e475dca",
+                    "@type": "OTHER",
+                    "name": "Facebook",
+                    "salience": 0.0029868064,
+                    "wikipedia_id": "Facebook"
+                },
+                {
+                    "@id": "3e69a491-c2c5-441d-a4fd-6a88be1c7eac",
+                    "@type": "OTHER",
+                    "name": "Huffington Post",
+                    "salience": 0.0016957697,
+                    "wikipedia_id": "HuffPost"
+                },
+                {
+                    "@id": "96d3d342-8197-4ad2-b97a-2af1a278f756",
+                    "@type": "OTHER",
+                    "name": "Twitter",
+                    "salience": 0.0010687271,
+                    "wikipedia_id": "Twitter"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "favicon": "http://assets.evie.com/asset/2d47c07b096a174c504f7f2fdc50ae418c975054/favicon_orig",
+                "identifier": "inc.com",
+                "name": "Inc."
+            },
+            "url": "https://www.inc.com/jordan-kasteler/five-ways-social-media-managers-can-gain-a-competitive-edge.html"
+        },
+        {
+            "@id": "e3a04c56-f4b9-37e1-a007-be386f1fda75",
+            "@type": "NewsArticle",
+            "analytics": {
+                "global_rank": 17375,
+                "global_score": 0.0012583238,
+                "layout_time": 1509054419542,
+                "salience": 0.0008007247
+            },
+            "author": {
+                "@context": "http://schema.org",
+                "@type": "Person",
+                "affiliation": {
+                    "@type": "Organization",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "height": 60,
+                        "url": "https://s.m.huffpost.com/assets/hp-amp-101ecf8047b044dce5f3122c63056162580f1c26994c73ae90dbd1c5d1545a71.gif",
+                        "width": 600
+                    },
+                    "name": "HuffPost",
+                    "url": "https://www.huffingtonpost.com"
+                },
+                "description": "Send Hilary tips and/or cute cat photos at Hilary.Hanson@huffpost.com.",
+                "jobTitle": "Senior trends editor, HuffPost",
+                "name": "Hilary Hanson",
+                "url": "http://www.huffingtonpost.com/author/hilary-hanson"
+            },
+            "dateCreated": "2017-10-22T16:55:47Z",
+            "datePublished": "2017-10-22T16:55:47+00:00",
+            "description": "The \"gentle giant's\" progress has made her a \"miracle of a pup,\" her foster mom says.",
+            "ev:category": [
+                {
+                    "confidence": 0.93,
+                    "name": "/Hobbies & Leisure"
+                },
+                {
+                    "confidence": 0.74,
+                    "name": "/Pets & Animals/Pets/Dogs"
+                }
+            ],
+            "ev:headlineNormcase": "Strudel the obese dog's fitness journey is nothing short of inspiring",
+            "headline": "Strudel the obese dog's fitness journey is nothing short of inspiring",
+            "id": "https://www.huffingtonpost.com/entry/strudel-obese-dog-fitness-weight-loss_us_59ecc19de4b00f08619f7e18?ncid=inblnkushpmg00000009",
+            "image": [
+                {
+                    "height": 338,
+                    "url": "http://assets.evie.com/asset/6afe3f7a66c4eac97894bb656457c0bddf7d2629/backdrop_hdpi",
+                    "width": 600
+                },
+                {
+                    "height": 450,
+                    "url": "http://assets.evie.com/asset/6afe3f7a66c4eac97894bb656457c0bddf7d2629/backdrop_xhdpi",
+                    "width": 800
+                },
+                {
+                    "height": 94,
+                    "url": "http://assets.evie.com/asset/6afe3f7a66c4eac97894bb656457c0bddf7d2629/icon_w94",
+                    "width": 94
+                },
+                {
+                    "height": 141,
+                    "url": "http://assets.evie.com/asset/6afe3f7a66c4eac97894bb656457c0bddf7d2629/icon_w141",
+                    "width": 141
+                },
+                {
+                    "height": 188,
+                    "url": "http://assets.evie.com/asset/6afe3f7a66c4eac97894bb656457c0bddf7d2629/icon_w188",
+                    "width": 188
+                },
+                {
+                    "height": 282,
+                    "url": "http://assets.evie.com/asset/6afe3f7a66c4eac97894bb656457c0bddf7d2629/icon_w282",
+                    "width": 282
+                },
+                {
+                    "height": 376,
+                    "url": "http://assets.evie.com/asset/6afe3f7a66c4eac97894bb656457c0bddf7d2629/icon_w376",
+                    "width": 376
+                },
+                {
+                    "height": 240,
+                    "url": "http://assets.evie.com/asset/6afe3f7a66c4eac97894bb656457c0bddf7d2629/tile43_w360",
+                    "width": 360
+                },
+                {
+                    "height": 480,
+                    "url": "http://assets.evie.com/asset/6afe3f7a66c4eac97894bb656457c0bddf7d2629/tile43_w720",
+                    "width": 720
+                }
+            ],
+            "inLanguage": "en_US",
+            "keywords": [
+                "united-states",
+                "huffington-post",
+                "fitness",
+                "diets",
+                "dog-care",
+                "cat-care",
+                "@sponsor_fitness-and-exercise",
+                "@amazonecho",
+                "@health_erectile",
+                "@health_adhd",
+                "@health_ibs",
+                "@health_models",
+                "@team_us_news_trends",
+                "type: news"
+            ],
+            "mainEntity": [
+                {
+                    "@id": "eb56d0d2-3d1a-40fd-a0de-08db1dd0f87a",
+                    "@type": "OTHER",
+                    "name": "Strudel The Obese Dog's Fitness Journey Is Nothing Short Of Inspiring Obesity",
+                    "salience": 0.6298485,
+                    "wikipedia_id": "Strudel"
+                },
+                {
+                    "@id": "6377b1ad-68b9-45b7-881c-79989eb5ffaf",
+                    "@type": "LOCATION",
+                    "name": "United States",
+                    "salience": 0.008421213,
+                    "wikipedia_id": "United_States"
+                },
+                {
+                    "@id": "3e69a491-c2c5-441d-a4fd-6a88be1c7eac",
+                    "@type": "ORGANIZATION",
+                    "name": "HuffPost",
+                    "salience": 0.0008007247,
+                    "wikipedia_id": "HuffPost"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "favicon": "http://assets.evie.com/asset/5ce26c3ee02eb8ebb3068a6a0ff08bc9ab6bad3c/favicon_orig",
+                "name": "HuffPost",
+                "url": "https://www.huffingtonpost.com"
+            },
+            "speakable": {
+                "@type": "SpeakableSpecification",
+                "cssSelector": [
+                    ".headline__title",
+                    ".headline__subtitle",
+                    ".js-entry-text"
+                ]
+            },
+            "url": "https://www.huffingtonpost.com/entry/strudel-obese-dog-fitness-weight-loss_us_59ecc19de4b00f08619f7e18"
+        }
+    ],
+    "tiles": [
+        {
+            "id": "d275ae66-81ab-32d7-8ffe-8772b825079e",
+            "type": "row",
+            "analytics": {
+                "global_rank": 447,
+                "global_score": 0.54563755,
+                "layout_time": 1509054419542,
+                "salience": 0.026774433
+            },
+            "positionX": 0,
+            "positionY": 0
+        },
+        {
+            "id": "228a034d-01e6-32c1-a84a-e08a24408a68",
+            "type": "row",
+            "analytics": {
+                "global_rank": 17717,
+                "global_score": 0.0010397354,
+                "layout_time": 1509054419542,
+                "salience": 0.26777223
+            },
+            "positionX": 0,
+            "positionY": 1
+        },
+        {
+            "id": "618e2dae-a4cb-3c04-ad2d-f989886866e2",
+            "type": "row",
+            "analytics": {
+                "global_rank": 3994,
+                "global_score": 0.24577828,
+                "layout_time": 1509054419542,
+                "salience": 0.09305579
+            },
+            "positionX": 0,
+            "positionY": 2
+        },
+        {
+            "id": "2f772f7b-006b-32b6-9993-4ddf1c406c21",
+            "type": "row",
+            "analytics": {
+                "global_rank": 2717,
+                "global_score": 0.3127413,
+                "layout_time": 1509054419542,
+                "salience": 0.046275415
+            },
+            "positionX": 0,
+            "positionY": 3
+        },
+        {
+            "id": "c2e6a801-13e5-36ec-a0c1-569d376a21ab",
+            "type": "row",
+            "analytics": {
+                "global_rank": 2977,
+                "global_score": 0.2983185,
+                "layout_time": 1509054419542,
+                "salience": 0.029101565
+            },
+            "positionX": 0,
+            "positionY": 4
+        },
+        {
+            "id": "817cb8cb-492b-354a-a4ea-fa878d92e23d",
+            "type": "row",
+            "analytics": {
+                "global_rank": 3038,
+                "global_score": 0.2949487,
+                "layout_time": 1509054419542,
+                "salience": 0.014680585
+            },
+            "positionX": 0,
+            "positionY": 5
+        },
+        {
+            "id": "bc2c54cd-5033-3a92-8830-8d950999b435",
+            "type": "row",
+            "analytics": {
+                "global_rank": 15445,
+                "global_score": 0.0033723055,
+                "layout_time": 1509054419542,
+                "salience": 0.14754781
+            },
+            "positionX": 0,
+            "positionY": 6
+        },
+        {
+            "id": "7b5cddec-bfc5-39bc-8cb8-00e5145a6c81",
+            "type": "row",
+            "analytics": {
+                "global_rank": 10442,
+                "global_score": 0.036387105,
+                "layout_time": 1509054419542,
+                "salience": 0.08993479
+            },
+            "positionX": 0,
+            "positionY": 7
+        },
+        {
+            "id": "960a227e-fcab-3f75-9229-ed1ae2c1df35",
+            "type": "row",
+            "analytics": {
+                "global_rank": 7100,
+                "global_score": 0.11973488,
+                "layout_time": 1509054419542,
+                "salience": 0.029906068
+            },
+            "positionX": 0,
+            "positionY": 8
+        },
+        {
+            "id": "20bea531-3a7e-3ad3-8396-4aff4b844d5a",
+            "type": "row",
+            "analytics": {
+                "global_rank": 6399,
+                "global_score": 0.14328404,
+                "layout_time": 1509054419542,
+                "salience": 0.0049796323
+            },
+            "positionX": 0,
+            "positionY": 9
+        },
+        {
+            "id": "92433ea9-bd04-37f6-bde2-fc0f94165109",
+            "type": "row",
+            "analytics": {
+                "global_rank": 8589,
+                "global_score": 0.07460006,
+                "layout_time": 1509054419542,
+                "salience": 0.0053767976
+            },
+            "positionX": 0,
+            "positionY": 10
+        },
+        {
+            "id": "3cbd3451-edd8-39d5-bced-0549f100232c",
+            "type": "row",
+            "analytics": {
+                "global_rank": 17910,
+                "global_score": 0.00092840334,
+                "layout_time": 1509054419542,
+                "salience": 0.039365668
+            },
+            "positionX": 0,
+            "positionY": 11
+        },
+        {
+            "id": "6d50b827-1ce9-389b-9230-0a0ade846b5e",
+            "type": "row",
+            "analytics": {
+                "global_rank": 16379,
+                "global_score": 0.0021236811,
+                "layout_time": 1509054419542,
+                "salience": 0.0016957697
+            },
+            "positionX": 0,
+            "positionY": 12
+        },
+        {
+            "id": "e3a04c56-f4b9-37e1-a007-be386f1fda75",
+            "type": "row",
+            "analytics": {
+                "global_rank": 17375,
+                "global_score": 0.0012583238,
+                "layout_time": 1509054419542,
+                "salience": 0.0008007247
+            },
+            "positionX": 0,
+            "positionY": 13
+        }
+    ],
+    "topics": {
+        "@id": "3e69a491-c2c5-441d-a4fd-6a88be1c7eac",
+        "@type": "ev:topicPublisher",
+        "name": "Huffington Post",
+        "description": "The Huffington Post is a liberal oriented American online news aggregator and blog founded by Arianna Huffington, Kenneth Lerer, Andrew Breitbart, and Jonah Peretti, featuring columnists.",
+        "images": [
+            {
+                "height": 338,
+                "url": "http://assets.evie.com/asset/8b48e7e325f9760e5e745277f6948e750a610a67/backdrop_hdpi",
+                "width": 600
+            },
+            {
+                "height": 94,
+                "url": "http://assets.evie.com/asset/8b48e7e325f9760e5e745277f6948e750a610a67/icon_w94",
+                "width": 94
+            }
+        ]
+    }
+}

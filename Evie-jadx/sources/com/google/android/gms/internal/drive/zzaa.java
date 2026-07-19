@@ -1,0 +1,28 @@
+package com.google.android.gms.internal.drive;
+
+import com.google.android.gms.drive.Metadata;
+import com.google.android.gms.drive.metadata.MetadataField;
+import com.google.android.gms.drive.metadata.internal.MetadataBundle;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class zzaa extends Metadata {
+    private final MetadataBundle zzdr;
+
+    public zzaa(MetadataBundle metadataBundle) {
+        this.zzdr = metadataBundle;
+    }
+
+    public final String toString() {
+        String strValueOf = String.valueOf(this.zzdr);
+        StringBuilder sb = new StringBuilder(String.valueOf(strValueOf).length() + 17);
+        sb.append("Metadata [mImpl=");
+        sb.append(strValueOf);
+        sb.append("]");
+        return sb.toString();
+    }
+
+    @Override // com.google.android.gms.drive.Metadata
+    public final <T> T zza(MetadataField<T> metadataField) {
+        return (T) this.zzdr.zza(metadataField);
+    }
+}

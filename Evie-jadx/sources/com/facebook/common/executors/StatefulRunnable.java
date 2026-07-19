@@ -1,0 +1,46 @@
+package com.facebook.common.executors;
+
+import java.util.concurrent.atomic.AtomicInteger;
+
+/* JADX INFO: loaded from: classes.dex */
+public abstract class StatefulRunnable<T> implements Runnable {
+    protected final AtomicInteger mState = new AtomicInteger(0);
+
+    protected void disposeResult(T t) {
+    }
+
+    protected abstract T getResult() throws Exception;
+
+    protected void onCancellation() {
+    }
+
+    protected void onFailure(Exception exc) {
+    }
+
+    protected void onSuccess(T t) {
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        if (this.mState.compareAndSet(0, 1)) {
+            try {
+                T result = getResult();
+                this.mState.set(3);
+                try {
+                    onSuccess(result);
+                } finally {
+                    disposeResult(result);
+                }
+            } catch (Exception e) {
+                this.mState.set(4);
+                onFailure(e);
+            }
+        }
+    }
+
+    public void cancel() {
+        if (this.mState.compareAndSet(0, 2)) {
+            onCancellation();
+        }
+    }
+}

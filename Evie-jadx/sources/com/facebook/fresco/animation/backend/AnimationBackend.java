@@ -1,0 +1,24 @@
+package com.facebook.fresco.animation.backend;
+
+import android.graphics.Canvas;
+import android.graphics.ColorFilter;
+import android.graphics.Rect;
+import android.graphics.drawable.Drawable;
+import javax.annotation.Nullable;
+
+/* JADX INFO: loaded from: classes.dex */
+public interface AnimationBackend extends AnimationInformation {
+    void clear();
+
+    boolean drawFrame(Drawable drawable, Canvas canvas, int i);
+
+    int getIntrinsicHeight();
+
+    int getIntrinsicWidth();
+
+    void setAlpha(int i);
+
+    void setBounds(Rect rect);
+
+    void setColorFilter(@Nullable ColorFilter colorFilter);
+}

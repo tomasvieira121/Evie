@@ -1,0 +1,17 @@
+package com.google.android.gms.common.api.internal;
+
+import com.google.android.gms.tasks.TaskCompletionSource;
+
+/* JADX INFO: loaded from: classes.dex */
+final class zaaf {
+    private final zai<?> zafp;
+    private final TaskCompletionSource<Boolean> zafq;
+
+    public final zai<?> zak() {
+        return this.zafp;
+    }
+
+    public final TaskCompletionSource<Boolean> zaal() {
+        return this.zafq;
+    }
+}

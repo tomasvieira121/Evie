@@ -1,0 +1,71 @@
+.class Lcom/aol/mobile/sdk/renderer/a$3;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/util/Comparator;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/aol/mobile/sdk/renderer/a;->onTracksChanged(Lcom/google/android/exoplayer2/source/TrackGroupArray;Lcom/google/android/exoplayer2/trackselection/TrackSelectionArray;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljava/util/Comparator<",
+        "Lcom/aol/mobile/sdk/renderer/AudioTrack;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/aol/mobile/sdk/renderer/a;
+
+
+# direct methods
+.method constructor <init>(Lcom/aol/mobile/sdk/renderer/a;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/aol/mobile/sdk/renderer/a$3;->a:Lcom/aol/mobile/sdk/renderer/a;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Lcom/aol/mobile/sdk/renderer/AudioTrack;Lcom/aol/mobile/sdk/renderer/AudioTrack;)I
+    .locals 0
+
+    iget-object p1, p1, Lcom/aol/mobile/sdk/renderer/AudioTrack;->title:Ljava/lang/String;
+
+    iget-object p2, p2, Lcom/aol/mobile/sdk/renderer/AudioTrack;->title:Ljava/lang/String;
+
+    invoke-virtual {p1, p2}, Ljava/lang/String;->compareTo(Ljava/lang/String;)I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 0
+
+    check-cast p1, Lcom/aol/mobile/sdk/renderer/AudioTrack;
+
+    check-cast p2, Lcom/aol/mobile/sdk/renderer/AudioTrack;
+
+    invoke-virtual {p0, p1, p2}, Lcom/aol/mobile/sdk/renderer/a$3;->a(Lcom/aol/mobile/sdk/renderer/AudioTrack;Lcom/aol/mobile/sdk/renderer/AudioTrack;)I
+
+    move-result p1
+
+    return p1
+.end method

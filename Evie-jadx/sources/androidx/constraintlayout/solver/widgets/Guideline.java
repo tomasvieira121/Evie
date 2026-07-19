@@ -1,0 +1,211 @@
+package androidx.constraintlayout.solver.widgets;
+
+import androidx.constraintlayout.solver.LinearSystem;
+import androidx.constraintlayout.solver.SolverVariable;
+import java.util.ArrayList;
+
+/* JADX INFO: loaded from: classes.dex */
+public class Guideline extends ConstraintWidget {
+    protected float mRelativePercent = -1.0f;
+    protected int mRelativeBegin = -1;
+    protected int mRelativeEnd = -1;
+    private ConstraintAnchor mAnchor = this.mTop;
+    private int mOrientation = 0;
+    private boolean mIsPositionRelaxed = false;
+    private int mMinimumPosition = 0;
+    private Rectangle mHead = new Rectangle();
+    private int mHeadSize = 8;
+
+    @Override // androidx.constraintlayout.solver.widgets.ConstraintWidget
+    public boolean allowedInBarrier() {
+        return true;
+    }
+
+    public Guideline() {
+        this.mAnchors.clear();
+        this.mAnchors.add(this.mAnchor);
+        int length = this.mListAnchors.length;
+        for (int i = 0; i < length; i++) {
+            this.mListAnchors[i] = this.mAnchor;
+        }
+    }
+
+    public void setOrientation(int i) {
+        if (this.mOrientation == i) {
+            return;
+        }
+        this.mOrientation = i;
+        this.mAnchors.clear();
+        if (this.mOrientation == 1) {
+            this.mAnchor = this.mLeft;
+        } else {
+            this.mAnchor = this.mTop;
+        }
+        this.mAnchors.add(this.mAnchor);
+        int length = this.mListAnchors.length;
+        for (int i2 = 0; i2 < length; i2++) {
+            this.mListAnchors[i2] = this.mAnchor;
+        }
+    }
+
+    public int getOrientation() {
+        return this.mOrientation;
+    }
+
+    @Override // androidx.constraintlayout.solver.widgets.ConstraintWidget
+    public ConstraintAnchor getAnchor(ConstraintAnchor.Type type) {
+        switch (type) {
+            case LEFT:
+            case RIGHT:
+                if (this.mOrientation == 1) {
+                    return this.mAnchor;
+                }
+                break;
+            case TOP:
+            case BOTTOM:
+                if (this.mOrientation == 0) {
+                    return this.mAnchor;
+                }
+                break;
+            case BASELINE:
+            case CENTER:
+            case CENTER_X:
+            case CENTER_Y:
+            case NONE:
+                return null;
+        }
+        throw new AssertionError(type.name());
+    }
+
+    @Override // androidx.constraintlayout.solver.widgets.ConstraintWidget
+    public ArrayList<ConstraintAnchor> getAnchors() {
+        return this.mAnchors;
+    }
+
+    public void setGuidePercent(float f) {
+        if (f > -1.0f) {
+            this.mRelativePercent = f;
+            this.mRelativeBegin = -1;
+            this.mRelativeEnd = -1;
+        }
+    }
+
+    public void setGuideBegin(int i) {
+        if (i > -1) {
+            this.mRelativePercent = -1.0f;
+            this.mRelativeBegin = i;
+            this.mRelativeEnd = -1;
+        }
+    }
+
+    public void setGuideEnd(int i) {
+        if (i > -1) {
+            this.mRelativePercent = -1.0f;
+            this.mRelativeBegin = -1;
+            this.mRelativeEnd = i;
+        }
+    }
+
+    @Override // androidx.constraintlayout.solver.widgets.ConstraintWidget
+    public void analyze(int i) {
+        ConstraintWidget parent = getParent();
+        if (parent == null) {
+            return;
+        }
+        if (getOrientation() == 1) {
+            this.mTop.getResolutionNode().dependsOn(1, parent.mTop.getResolutionNode(), 0);
+            this.mBottom.getResolutionNode().dependsOn(1, parent.mTop.getResolutionNode(), 0);
+            if (this.mRelativeBegin != -1) {
+                this.mLeft.getResolutionNode().dependsOn(1, parent.mLeft.getResolutionNode(), this.mRelativeBegin);
+                this.mRight.getResolutionNode().dependsOn(1, parent.mLeft.getResolutionNode(), this.mRelativeBegin);
+                return;
+            } else if (this.mRelativeEnd != -1) {
+                this.mLeft.getResolutionNode().dependsOn(1, parent.mRight.getResolutionNode(), -this.mRelativeEnd);
+                this.mRight.getResolutionNode().dependsOn(1, parent.mRight.getResolutionNode(), -this.mRelativeEnd);
+                return;
+            } else {
+                if (this.mRelativePercent == -1.0f || parent.getHorizontalDimensionBehaviour() != ConstraintWidget.DimensionBehaviour.FIXED) {
+                    return;
+                }
+                int i2 = (int) (parent.mWidth * this.mRelativePercent);
+                this.mLeft.getResolutionNode().dependsOn(1, parent.mLeft.getResolutionNode(), i2);
+                this.mRight.getResolutionNode().dependsOn(1, parent.mLeft.getResolutionNode(), i2);
+                return;
+            }
+        }
+        this.mLeft.getResolutionNode().dependsOn(1, parent.mLeft.getResolutionNode(), 0);
+        this.mRight.getResolutionNode().dependsOn(1, parent.mLeft.getResolutionNode(), 0);
+        if (this.mRelativeBegin != -1) {
+            this.mTop.getResolutionNode().dependsOn(1, parent.mTop.getResolutionNode(), this.mRelativeBegin);
+            this.mBottom.getResolutionNode().dependsOn(1, parent.mTop.getResolutionNode(), this.mRelativeBegin);
+        } else if (this.mRelativeEnd != -1) {
+            this.mTop.getResolutionNode().dependsOn(1, parent.mBottom.getResolutionNode(), -this.mRelativeEnd);
+            this.mBottom.getResolutionNode().dependsOn(1, parent.mBottom.getResolutionNode(), -this.mRelativeEnd);
+        } else {
+            if (this.mRelativePercent == -1.0f || parent.getVerticalDimensionBehaviour() != ConstraintWidget.DimensionBehaviour.FIXED) {
+                return;
+            }
+            int i3 = (int) (parent.mHeight * this.mRelativePercent);
+            this.mTop.getResolutionNode().dependsOn(1, parent.mTop.getResolutionNode(), i3);
+            this.mBottom.getResolutionNode().dependsOn(1, parent.mTop.getResolutionNode(), i3);
+        }
+    }
+
+    @Override // androidx.constraintlayout.solver.widgets.ConstraintWidget
+    public void addToSolver(LinearSystem linearSystem) {
+        ConstraintWidgetContainer constraintWidgetContainer = (ConstraintWidgetContainer) getParent();
+        if (constraintWidgetContainer == null) {
+            return;
+        }
+        ConstraintAnchor anchor = constraintWidgetContainer.getAnchor(ConstraintAnchor.Type.LEFT);
+        ConstraintAnchor anchor2 = constraintWidgetContainer.getAnchor(ConstraintAnchor.Type.RIGHT);
+        boolean z = this.mParent != null && this.mParent.mListDimensionBehaviors[0] == ConstraintWidget.DimensionBehaviour.WRAP_CONTENT;
+        if (this.mOrientation == 0) {
+            anchor = constraintWidgetContainer.getAnchor(ConstraintAnchor.Type.TOP);
+            anchor2 = constraintWidgetContainer.getAnchor(ConstraintAnchor.Type.BOTTOM);
+            z = this.mParent != null && this.mParent.mListDimensionBehaviors[1] == ConstraintWidget.DimensionBehaviour.WRAP_CONTENT;
+        }
+        if (this.mRelativeBegin != -1) {
+            SolverVariable solverVariableCreateObjectVariable = linearSystem.createObjectVariable(this.mAnchor);
+            linearSystem.addEquality(solverVariableCreateObjectVariable, linearSystem.createObjectVariable(anchor), this.mRelativeBegin, 6);
+            if (z) {
+                linearSystem.addGreaterThan(linearSystem.createObjectVariable(anchor2), solverVariableCreateObjectVariable, 0, 5);
+                return;
+            }
+            return;
+        }
+        if (this.mRelativeEnd == -1) {
+            if (this.mRelativePercent != -1.0f) {
+                linearSystem.addConstraint(LinearSystem.createRowDimensionPercent(linearSystem, linearSystem.createObjectVariable(this.mAnchor), linearSystem.createObjectVariable(anchor), linearSystem.createObjectVariable(anchor2), this.mRelativePercent, this.mIsPositionRelaxed));
+                return;
+            }
+            return;
+        }
+        SolverVariable solverVariableCreateObjectVariable2 = linearSystem.createObjectVariable(this.mAnchor);
+        SolverVariable solverVariableCreateObjectVariable3 = linearSystem.createObjectVariable(anchor2);
+        linearSystem.addEquality(solverVariableCreateObjectVariable2, solverVariableCreateObjectVariable3, -this.mRelativeEnd, 6);
+        if (z) {
+            linearSystem.addGreaterThan(solverVariableCreateObjectVariable2, linearSystem.createObjectVariable(anchor), 0, 5);
+            linearSystem.addGreaterThan(solverVariableCreateObjectVariable3, solverVariableCreateObjectVariable2, 0, 5);
+        }
+    }
+
+    @Override // androidx.constraintlayout.solver.widgets.ConstraintWidget
+    public void updateFromSolver(LinearSystem linearSystem) {
+        if (getParent() == null) {
+            return;
+        }
+        int objectVariableValue = linearSystem.getObjectVariableValue(this.mAnchor);
+        if (this.mOrientation == 1) {
+            setX(objectVariableValue);
+            setY(0);
+            setHeight(getParent().getHeight());
+            setWidth(0);
+            return;
+        }
+        setX(0);
+        setY(objectVariableValue);
+        setWidth(getParent().getWidth());
+        setHeight(0);
+    }
+}

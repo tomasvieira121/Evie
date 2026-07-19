@@ -1,0 +1,14 @@
+package com.facebook.common.internal;
+
+/* JADX INFO: loaded from: classes.dex */
+public class Suppliers {
+    /* JADX INFO: renamed from: of */
+    public static <T> Supplier<T> m316of(final T t) {
+        return new Supplier<T>() { // from class: com.facebook.common.internal.Suppliers.1
+            @Override // com.facebook.common.internal.Supplier
+            public T get() {
+                return (T) t;
+            }
+        };
+    }
+}
