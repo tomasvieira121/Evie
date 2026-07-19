@@ -251,7 +251,7 @@ public final class zznk {
     private static final zzna<Boolean> zzbdd = zzna.zza(1, "gads:parental_controls:send_from_client", (Boolean) true);
     private static final zzna<Boolean> zzbde = zzna.zza(1, "gads:parental_controls:cache_results", (Boolean) true);
     public static final zzna<Long> zzbdf = zzna.zza(1, "gads:parental_controls:timeout", 2000L);
-    private static final zzna<String> zzbdg = zzna.zza(0, "gads:safe_browsing:api_key", "REDACTED_GOOGLE_API_KEY");
+    private static final zzna<String> zzbdg = zzna.zza(0, "gads:safe_browsing:api_key", "INJECT_ADS_SAFE_BROWSING_API_KEY");
     private static final zzna<Long> zzbdh = zzna.zza(0, "gads:safe_browsing:safety_net:delay_ms", 2000L);
     public static final zzna<Boolean> zzbdi = zzna.zza(0, "gads:safe_browsing:debug", (Boolean) false);
     public static final zzna<Boolean> zzbdj = zzna.zza(0, "gads:webview_cookie:enabled", (Boolean) true);

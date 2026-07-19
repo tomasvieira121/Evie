@@ -33,11 +33,8 @@ Original APK SHA-256:
 d8c0ec8a5af5aed51f31d56d1f0967a5d49807ec58f523d2cb1c60601de5001e
 ```
 
-Release APK SHA-256:
-
-```text
-43e8521dbf351ac9b400d835cd65196807d8a1c3c11d459594d08a9d206e88a5
-```
+Release APK SHA-256 is published in `Evie-modern-SHA256SUMS.txt` beside the APK
+on GitHub Releases. It is regenerated and verified for every manual build.
 
 ## Repository layout
 
@@ -56,7 +53,8 @@ Evie-jadx/
 ```
 
 Generated APKs, Apktool build directories, and signing keys are deliberately
-excluded from Git. Release APKs belong in GitHub Releases, not repository history.
+excluded from Git. API credentials are represented by injection placeholders.
+Release APKs belong in GitHub Releases, not repository history.
 
 ## Reverse-engineering process
 
@@ -238,6 +236,42 @@ single-method contract, removing its dependency on Android framework internals.
 
 ## Rebuilding
 
+### Manual GitHub Actions build
+
+`.github/workflows/signed-build.yml` has only a `workflow_dispatch` trigger. It
+never runs for pushes or pull requests. Start it from **Actions → Signed Android
+build → Run workflow**. Every run builds, aligns, signs, verifies, and uploads the
+APK as a workflow artifact. The optional `publish_release` input also publishes
+or replaces the GitHub Release assets.
+
+Required repository Actions secrets:
+
+- `EVIE_FIREBASE_API_KEY`
+- `EVIE_GOOGLE_MAPS_API_KEY`
+- `EVIE_YOUTUBE_API_KEY`
+- `EVIE_ADS_SAFE_BROWSING_API_KEY`
+- `EVIE_FABRIC_DEVELOPER_TOKEN`
+- `EVIE_SIGNING_KEYSTORE_BASE64`
+- `EVIE_SIGNING_STORE_PASSWORD`
+- `EVIE_SIGNING_KEY_PASSWORD`
+
+Required repository Actions variables:
+
+- `EVIE_SIGNING_KEY_ALIAS`
+- `EVIE_SIGNING_CERT_SHA256`
+
+Secrets are injected into the runner's temporary checkout by
+`scripts/inject-build-secrets.py`; neither their values nor the signing key are
+stored in Git. The workflow uses SHA-pinned GitHub-maintained actions and verifies
+the downloaded Apktool checksum, APK alignment, version, signature schemes, and
+signing certificate before upload.
+
+Android client API keys embedded in the resulting APK can still be extracted by
+any installer. They must be restricted in Google Cloud to package `is.shortcut`,
+the Evie Modern signing certificate, required APIs, and conservative quotas.
+Credentials that must remain truly private require a server-side proxy and must
+not be injected into an APK.
+
 ### Requirements
 
 Validated toolchain:
@@ -260,6 +294,13 @@ mkdir -p out
 Build and align:
 
 ```bash
+export EVIE_FIREBASE_API_KEY=your_restricted_firebase_key
+export EVIE_GOOGLE_MAPS_API_KEY=your_restricted_maps_key
+export EVIE_YOUTUBE_API_KEY=your_restricted_youtube_key
+export EVIE_ADS_SAFE_BROWSING_API_KEY=your_restricted_safe_browsing_key
+export EVIE_FABRIC_DEVELOPER_TOKEN=your_fabric_token
+python3 scripts/inject-build-secrets.py
+
 java -jar "$APKTOOL_JAR" b -f Evie-src \
   -o out/Evie-modern-unsigned.apk
 
@@ -347,8 +388,8 @@ expected when Evie is not yet selected as the default launcher.
 - Evie's server-side services may no longer exist. News, recommendations, remote
   search, ads, analytics, sign-in, and push messaging may be partially or fully
   unavailable.
-- Google-backed Maps, YouTube, Firebase, and ad safe-browsing integrations that
-  depended on redacted legacy API keys will not authenticate in this build.
+- A source checkout contains credential placeholders. Google-backed integrations
+  authenticate only in builds produced after valid credentials are injected.
 - Bundled Firebase, Google Play Services, Crashlytics, AndroidX, Fresco, OkHttp,
   and other dependencies remain 2018-era bytecode. Compatibility shims address
   observed platform blockers but do not modernize those SDKs internally.
@@ -370,8 +411,9 @@ libraries were used. No third-party mod APK content is part of this repository o
 release.
 
 Legacy Google API keys and Fabric SDK developer tokens recovered from the
-original APK and bundled dependencies were redacted from both authoritative
-smali and reference decompilation output.
+original APK and bundled dependencies were replaced by named placeholders in
+both authoritative smali and reference decompilation output. The manual build
+workflow restores their values from encrypted Actions secrets only on its runner.
 
 Before installing any binary, compare its SHA-256 checksum and signing certificate
 with values published here and in the GitHub Release notes.

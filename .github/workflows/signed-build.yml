@@ -1,0 +1,186 @@
+name: Signed Android build
+run-name: Signed Android build by @${{ github.actor }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      publish_release:
+        description: Publish or replace the v2.14.8-10-modern release assets
+        required: true
+        default: false
+        type: boolean
+
+concurrency:
+  group: evie-signed-build
+  cancel-in-progress: false
+
+env:
+  APKTOOL_VERSION: 3.0.2
+  APKTOOL_SHA256: eee4669a704a14e0623407e6701b0b91887e61e1e4049cb7a82833e14ae8b5fd
+  BUILD_TOOLS_VERSION: 35.0.0
+  PLATFORM_VERSION: 36
+  VERSION_NAME: 2.14.8-10-modern
+  VERSION_CODE: "21408010"
+  RELEASE_TAG: v2.14.8-10-modern
+  ARTIFACT_NAME: Evie-modern-2.14.8-10-modern
+
+jobs:
+  build:
+    name: Build and sign APK
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          persist-credentials: false
+
+      - name: Set up Java 17
+        uses: actions/setup-java@03ad4de0992f5dab5e18fcb136590ce7c4a0ac95 # v5.6.0
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Install Android SDK packages
+        shell: bash
+        run: |
+          set -euo pipefail
+          sdkmanager="${ANDROID_HOME}/cmdline-tools/latest/bin/sdkmanager"
+          test -x "$sdkmanager"
+          "$sdkmanager" \
+            "platforms;android-${PLATFORM_VERSION}" \
+            "build-tools;${BUILD_TOOLS_VERSION}" >/dev/null
+
+      - name: Download verified Apktool
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "${RUNNER_TEMP}/evie-tools" out
+          apktool="${RUNNER_TEMP}/evie-tools/apktool.jar"
+          curl --fail --location --silent --show-error \
+            "https://github.com/iBotPeaches/Apktool/releases/download/v${APKTOOL_VERSION}/apktool_${APKTOOL_VERSION}.jar" \
+            --output "$apktool"
+          printf '%s  %s\n' "$APKTOOL_SHA256" "$apktool" | sha256sum --check
+
+      - name: Inject build credentials
+        shell: bash
+        env:
+          EVIE_FIREBASE_API_KEY: ${{ secrets.EVIE_FIREBASE_API_KEY }}
+          EVIE_GOOGLE_MAPS_API_KEY: ${{ secrets.EVIE_GOOGLE_MAPS_API_KEY }}
+          EVIE_YOUTUBE_API_KEY: ${{ secrets.EVIE_YOUTUBE_API_KEY }}
+          EVIE_ADS_SAFE_BROWSING_API_KEY: ${{ secrets.EVIE_ADS_SAFE_BROWSING_API_KEY }}
+          EVIE_FABRIC_DEVELOPER_TOKEN: ${{ secrets.EVIE_FABRIC_DEVELOPER_TOKEN }}
+        run: python3 scripts/inject-build-secrets.py
+
+      - name: Build and align APK
+        shell: bash
+        run: |
+          set -euo pipefail
+          build_tools="${ANDROID_HOME}/build-tools/${BUILD_TOOLS_VERSION}"
+          java -jar "${RUNNER_TEMP}/evie-tools/apktool.jar" b -f Evie-src \
+            -o out/Evie-modern-unsigned.apk
+          "$build_tools/zipalign" -P 16 -f 4 \
+            out/Evie-modern-unsigned.apk out/Evie-modern-aligned.apk
+
+      - name: Restore signing key and sign APK
+        shell: bash
+        env:
+          EVIE_KEYSTORE_BASE64: ${{ secrets.EVIE_SIGNING_KEYSTORE_BASE64 }}
+          EVIE_KEYSTORE_PASSWORD: ${{ secrets.EVIE_SIGNING_STORE_PASSWORD }}
+          EVIE_KEY_PASSWORD: ${{ secrets.EVIE_SIGNING_KEY_PASSWORD }}
+          EVIE_KEY_ALIAS: ${{ vars.EVIE_SIGNING_KEY_ALIAS }}
+        run: |
+          set -euo pipefail
+          test -n "$EVIE_KEYSTORE_BASE64"
+          test -n "$EVIE_KEYSTORE_PASSWORD"
+          test -n "$EVIE_KEY_PASSWORD"
+          test -n "$EVIE_KEY_ALIAS"
+
+          keystore="${RUNNER_TEMP}/Evie-modern.keystore"
+          printf '%s' "$EVIE_KEYSTORE_BASE64" | base64 --decode > "$keystore"
+          chmod 600 "$keystore"
+
+          "${ANDROID_HOME}/build-tools/${BUILD_TOOLS_VERSION}/apksigner" sign \
+            --ks "$keystore" \
+            --ks-key-alias "$EVIE_KEY_ALIAS" \
+            --ks-pass env:EVIE_KEYSTORE_PASSWORD \
+            --key-pass env:EVIE_KEY_PASSWORD \
+            --out out/Evie-modern.apk \
+            out/Evie-modern-aligned.apk
+
+      - name: Verify release APK
+        shell: bash
+        env:
+          EXPECTED_CERT_SHA256: ${{ vars.EVIE_SIGNING_CERT_SHA256 }}
+        run: |
+          set -euo pipefail
+          build_tools="${ANDROID_HOME}/build-tools/${BUILD_TOOLS_VERSION}"
+          analyzer="${ANDROID_HOME}/cmdline-tools/latest/bin/apkanalyzer"
+
+          "$build_tools/zipalign" -P 16 -c 4 out/Evie-modern.apk
+          signature="$("$build_tools/apksigner" verify --verbose --print-certs out/Evie-modern.apk)"
+          printf '%s\n' "$signature"
+          grep -Fq 'Verified using v1 scheme (JAR signing): true' <<<"$signature"
+          grep -Fq 'Verified using v2 scheme (APK Signature Scheme v2): true' <<<"$signature"
+          grep -Fq 'Verified using v3 scheme (APK Signature Scheme v3): true' <<<"$signature"
+
+          actual_cert="$(sed -n 's/^Signer #1 certificate SHA-256 digest: //p' <<<"$signature")"
+          test -n "$EXPECTED_CERT_SHA256"
+          test "$actual_cert" = "$EXPECTED_CERT_SHA256"
+          test "$("$analyzer" manifest version-name out/Evie-modern.apk)" = "$VERSION_NAME"
+          test "$("$analyzer" manifest version-code out/Evie-modern.apk)" = "$VERSION_CODE"
+
+          if unzip -p out/Evie-modern.apk classes.dex classes2.dex resources.arsc \
+            | strings | grep -q 'INJECT_[A-Z_]'; then
+            echo 'Injection placeholder remains in release APK' >&2
+            exit 1
+          fi
+
+          (cd out && sha256sum Evie-modern.apk > Evie-modern-SHA256SUMS.txt)
+
+      - name: Upload signed build
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: ${{ env.ARTIFACT_NAME }}
+          path: |
+            out/Evie-modern.apk
+            out/Evie-modern-SHA256SUMS.txt
+          if-no-files-found: error
+          retention-days: 30
+
+  release:
+    name: Publish release assets
+    if: ${{ inputs.publish_release }}
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - name: Download signed build
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: ${{ env.ARTIFACT_NAME }}
+          path: release
+
+      - name: Publish or replace release assets
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          assets=(release/Evie-modern.apk release/Evie-modern-SHA256SUMS.txt)
+          if gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release upload "$RELEASE_TAG" "${assets[@]}" \
+              --repo "$GITHUB_REPOSITORY" --clobber
+          else
+            gh release create "$RELEASE_TAG" "${assets[@]}" \
+              --repo "$GITHUB_REPOSITORY" \
+              --verify-tag \
+              --title "Evie Launcher 2.14.8-10 Modern (Android 16)" \
+              --generate-notes
+          fi

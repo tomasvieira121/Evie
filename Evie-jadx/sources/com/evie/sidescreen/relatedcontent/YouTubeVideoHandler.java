@@ -237,7 +237,7 @@ public class YouTubeVideoHandler implements VideoHandler {
     }
 
     private void initYouTube() {
-        ((YouTubePlayerSupportFragment) this.mVideoHelperInterface.getSupportFragmentManager().findFragmentById(R.id.youtube_player_fragment)).initialize("REDACTED_GOOGLE_API_KEY", new C05672());
+        ((YouTubePlayerSupportFragment) this.mVideoHelperInterface.getSupportFragmentManager().findFragmentById(R.id.youtube_player_fragment)).initialize("INJECT_YOUTUBE_API_KEY", new C05672());
     }
 
     /* JADX INFO: renamed from: com.evie.sidescreen.relatedcontent.YouTubeVideoHandler$2 */

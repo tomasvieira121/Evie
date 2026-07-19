@@ -8,7 +8,7 @@
 
 .field public static final ANDROID_CLIENT_TYPE:Ljava/lang/String; = "android"
 
-.field public static final CLS_ANDROID_SDK_DEVELOPER_TOKEN:Ljava/lang/String; = "REDACTED_FABRIC_DEVELOPER_TOKEN"
+.field public static final CLS_ANDROID_SDK_DEVELOPER_TOKEN:Ljava/lang/String; = "INJECT_FABRIC_DEVELOPER_TOKEN"
 
 .field public static final CRASHLYTICS_USER_AGENT:Ljava/lang/String; = "Crashlytics Android SDK/"
 
@@ -231,7 +231,7 @@
 
     const-string v0, "X-CRASHLYTICS-DEVELOPER-TOKEN"
 
-    const-string v1, "REDACTED_FABRIC_DEVELOPER_TOKEN"
+    const-string v1, "INJECT_FABRIC_DEVELOPER_TOKEN"
 
     .line 142
     invoke-virtual {p1, v0, v1}, Lio/fabric/sdk/android/services/network/HttpRequest;->header(Ljava/lang/String;Ljava/lang/String;)Lio/fabric/sdk/android/services/network/HttpRequest;

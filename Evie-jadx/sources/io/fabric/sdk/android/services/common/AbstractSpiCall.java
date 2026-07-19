@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
 public abstract class AbstractSpiCall {
     public static final String ACCEPT_JSON_VALUE = "application/json";
     public static final String ANDROID_CLIENT_TYPE = "android";
-    public static final String CLS_ANDROID_SDK_DEVELOPER_TOKEN = "REDACTED_FABRIC_DEVELOPER_TOKEN";
+    public static final String CLS_ANDROID_SDK_DEVELOPER_TOKEN = "INJECT_FABRIC_DEVELOPER_TOKEN";
     public static final String CRASHLYTICS_USER_AGENT = "Crashlytics Android SDK/";
     public static final int DEFAULT_TIMEOUT = 10000;
     public static final String HEADER_ACCEPT = "Accept";

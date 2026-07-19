@@ -355,10 +355,10 @@
     <string name="gesture_type_swipe_up">Swipe up</string>
     <string name="gesture_type_two_finger_swipe_down">Two fingers swipe down</string>
     <string name="gesture_type_two_finger_swipe_up">Two fingers swipe up</string>
-    <string name="google_api_key">REDACTED_GOOGLE_API_KEY</string>
+    <string name="google_api_key">INJECT_FIREBASE_API_KEY</string>
     <string name="google_app_id">1:219321769016:android:646591acf83eb03f</string>
-    <string name="google_crash_reporting_api_key">REDACTED_GOOGLE_API_KEY</string>
-    <string name="google_maps_key">REDACTED_GOOGLE_API_KEY</string>
+    <string name="google_crash_reporting_api_key">INJECT_FIREBASE_API_KEY</string>
+    <string name="google_maps_key">INJECT_GOOGLE_MAPS_API_KEY</string>
     <string name="google_maps_loading_description">Fetching details…</string>
     <string name="google_storage_bucket">sidescreen-f6756.appspot.com</string>
     <string name="hide_bottom_view_on_scroll_behavior">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>

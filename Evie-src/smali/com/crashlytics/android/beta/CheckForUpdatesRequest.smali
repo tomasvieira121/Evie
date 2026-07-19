@@ -90,7 +90,7 @@
 
     const-string v0, "X-CRASHLYTICS-DEVELOPER-TOKEN"
 
-    const-string v1, "REDACTED_FABRIC_DEVELOPER_TOKEN"
+    const-string v1, "INJECT_FABRIC_DEVELOPER_TOKEN"
 
     .line 78
     invoke-virtual {p1, v0, v1}, Lio/fabric/sdk/android/services/network/HttpRequest;->header(Ljava/lang/String;Ljava/lang/String;)Lio/fabric/sdk/android/services/network/HttpRequest;

@@ -371,7 +371,7 @@
 
     check-cast v0, Lcom/google/android/youtube/player/YouTubePlayerSupportFragment;
 
-    const-string v1, "REDACTED_GOOGLE_API_KEY"
+    const-string v1, "INJECT_YOUTUBE_API_KEY"
 
     .line 263
     new-instance v2, Lcom/evie/sidescreen/relatedcontent/YouTubeVideoHandler$2;

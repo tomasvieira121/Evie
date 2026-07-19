@@ -5639,7 +5639,7 @@
 
     const-string v0, "gads:safe_browsing:api_key"
 
-    const-string v3, "REDACTED_GOOGLE_API_KEY"
+    const-string v3, "INJECT_ADS_SAFE_BROWSING_API_KEY"
 
     invoke-static {v1, v0, v3}, Lcom/google/android/gms/internal/ads/zzna;->zza(ILjava/lang/String;Ljava/lang/String;)Lcom/google/android/gms/internal/ads/zzna;
 
