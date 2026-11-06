@@ -3,8 +3,9 @@
 This repository contains a reverse-engineered, compatibility-patched build of
 Evie Launcher 2.14.8. The original application was released in 2019 and targeted
 Android 9 (API 28). This rebuild targets Android 16 (API 36), installs and starts
-on current Android, supports modern ARM64-only devices, and uses native libraries
-compatible with 16 KB memory pages.
+on current Android (including Android 14), supports modern ARM64 devices as
+well as 32-bit ARM devices (such as the Samsung Galaxy A13 4G), and uses native
+libraries compatible with 16 KB memory pages.
 
 > [!IMPORTANT]
 > This is not the original Evie source code. `Evie-src/` is Apktool-generated
@@ -24,7 +25,7 @@ The installable APK is published on the
 | Minimum SDK | API 19 | API 23 |
 | Target SDK | API 28 | API 36 |
 | Compile SDK | API 28 | API 36 |
-| Native ABI | `armeabi-v7a` | `arm64-v8a` |
+| Native ABI | `armeabi-v7a` | `arm64-v8a`, `armeabi-v7a` |
 | Signing | Original Voxel certificate | Independent Evie Modern certificate |
 
 Original APK SHA-256:
@@ -47,6 +48,7 @@ Evie-src/
   res/                      Decoded Android resources
   assets/                   Original application assets
   lib/arm64-v8a/            Recovered matching ARM64 native libraries
+  lib/armeabi-v7a/          Recovered matching 32-bit ARM native libraries
   unknown/                  Dependency metadata retained by Apktool
 Evie-jadx/
   sources/                  Readable best-effort Java decompilation
@@ -195,14 +197,16 @@ sizes and SHA-256 hashes against archived Maven artifacts:
 | `libgifimage.so` | `com.facebook.fresco:animated-gif` | `1.4.0` |
 | `libimagepipeline.so` | `com.facebook.fresco:imagepipeline` | `1.4.0` |
 
-The exact matching ARM64 variants from those releases replaced the ARMv7 files.
-Their ELF `LOAD` segments use 64 KB alignment, which is compatible with Android's
+Both matching ARM64 (`arm64-v8a`) and 32-bit ARM (`armeabi-v7a`) variants
+from those releases are included. This ensures full compatibility with both modern
+64-bit devices and 32-bit userland devices (such as the Samsung Galaxy A13 4G).
+The ARM64 ELF `LOAD` segments use 64 KB alignment, which is compatible with Android's
 16 KB page-size requirement. The final APK is aligned using `zipalign -P 16` and
 declares `android:pageSizeCompat="disabled"`, ensuring accidental regressions do
-not silently use compatibility mode.
+not silently use compatibility mode on 64-bit targets.
 
-The release is ARM64-only. ARMv7, x86, and x86_64 devices are not supported by
-the published APK.
+The release supports ARM64 and ARMv7 (32-bit ARM). x86 and x86_64 devices are
+not supported by the published APK.
 
 ### 9. Screen and navigation compatibility
 
@@ -397,7 +401,7 @@ expected when Evie is not yet selected as the default launcher.
   not been redesigned around current runtime-permission UX.
 - UI was designed for portrait phones. API 36 uses a temporary large-screen
   compatibility property rather than a full responsive-layout rewrite.
-- Release supports ARM64 only.
+- Release supports ARM64 and ARMv7 (32-bit ARM). x86 and x86_64 devices are not supported.
 - Google Play publication is not guaranteed. Restricted permissions, current
   Play policies, signing ownership, intellectual-property rights, and SDK policy
   requirements must be reviewed separately.
