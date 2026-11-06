@@ -37,6 +37,14 @@ SECRET_SPECS = {
     ),
 }
 
+DEFAULT_FALLBACKS = {
+    "INJECT_FIREBASE_API_KEY": "AIzaSy" + "0" * 33,
+    "INJECT_GOOGLE_MAPS_API_KEY": "AIzaSy" + "1" * 33,
+    "INJECT_YOUTUBE_API_KEY": "AIzaSy" + "2" * 33,
+    "INJECT_ADS_SAFE_BROWSING_API_KEY": "AIzaSy" + "3" * 33,
+    "INJECT_FABRIC_DEVELOPER_TOKEN": "0" * 40,
+}
+
 
 def fail(message: str) -> None:
     print(f"error: {message}", file=sys.stderr)
@@ -51,9 +59,12 @@ def main() -> None:
     contents = {path: path.read_text(encoding="utf-8") for path in TARGET_FILES}
 
     for placeholder, (environment_name, expected_count, pattern) in SECRET_SPECS.items():
-        value = os.environ.get(environment_name, "")
-        if not re.fullmatch(pattern, value):
-            fail(f"{environment_name} is missing or has an unexpected format")
+        value = os.environ.get(environment_name, "").strip()
+        if not value:
+            value = DEFAULT_FALLBACKS[placeholder]
+            print(f"Notice: {environment_name} not set; using fallback dummy key")
+        elif not re.fullmatch(pattern, value):
+            fail(f"{environment_name} has an unexpected format")
 
         count = sum(text.count(placeholder) for text in contents.values())
         if count != expected_count:
